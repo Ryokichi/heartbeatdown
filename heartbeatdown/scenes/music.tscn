@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwbatb8nej6sm"]
+
+[ext_resource type="Script" uid="uid://cvmksv1hftj7v" path="res://scenes/music.gd" id="1_ibx2e"]
+[ext_resource type="Texture2D" uid="uid://c6yrmikn787ql" path="res://assets/image/background.png" id="2_qnihg"]
+
+[node name="main_music" type="Node2D"]
+script = ExtResource("1_ibx2e")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("2_qnihg")
