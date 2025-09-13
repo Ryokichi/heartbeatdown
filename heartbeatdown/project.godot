@@ -13,12 +13,14 @@ config_version=5
 config/name="HeartBeatdown"
 run/main_scene="uid://dwbatb8nej6sm"
 config/features=PackedStringArray("4.4", "Mobile")
-config/icon="res://assets/image/icon.svg"
+config/icon="uid://bogkr87cn5d0q"
+config/windows_native_icon="res://assets/image/nota.ico"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/size/mode=1
 window/size/initial_position_type=3
 
 [rendering]

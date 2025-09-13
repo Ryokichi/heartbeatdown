@@ -1,40 +1,55 @@
 extends Node2D
 
+var chart_data = [];
+var next_note_time = 0
+var next_tempo_time = 0
+
+
+
+@onready var nota = preload("res://scenes/Utils/notaMusical.tscn")
+
+func spawn_note(index):
+	var _nota = nota.instantiate()
+	_nota.position = Vector2(100+(index*100), 100) # posição inicial (x=200, y=0)
+	add_child(_nota)
+
+func sumTimes(chart_data):
+	var tempo_total = {}
+	var notes_channel = chart_data["notes"]
+	for channel in notes_channel:
+		var note_data = notes_channel[channel]
+		for data in note_data:
+			tempo_total[channel] = tempo_total.get(channel, 0) + data["time"]
+	return tempo_total
 
 func _ready():
-	var file_path = "res://assets/music_charts/music_01.json"
-	var json_data = load_json_file(file_path)
-
-	if json_data is Dictionary:
-		print("Carreguédi dicionario") # Aqui você pode usar os dados como quiser
-	elif json_data is Array:
-		print("Carregou errado como array")
-	else:
-		print('Carregou errado!')
+	chart_data = Utils.load_json_to_dict("res://assets/music_charts/music_01.json")
+	print("Tempos -->", Utils.sumTimes(chart_data))
+	
+	print("Tipo ", typeof(chart_data["notes"]["0"]))
+	
 	pass
 
-func load_json_file(file_path: String) -> Dictionary: 
-	print(file_path)
-	var file = FileAccess.open(file_path, FileAccess.READ)
-	var content = JSON.parse_string(file.get_as_text())
-
-	file.close()
-	return content
+func _process(delta: float) -> void:
+	for data in chart_data["notes"]["0"]:
+		if (next_note_time <= 0):
+			#print(data)
+			next_note_time = data["time"]/60
+		#print("Passado :", spended_time, " | Tempo acumulado:", total_time)
+		#
+		#next_trigger_time = chart_data[chart_line].tempo
+		#for i in range(1, 7):
+			#var key = "btn%d" % i
+			#var value = chart_data[chart_line][key]
+			#if (value == "TRUE"):
+				#spawn_note(i)
+				#pass
 #
-	#if file.open(path, File.READ) != OK:
-		#print("Não foi possível abrir o arquivo.")
-		#return null
-	#
-	## Lê todo o conteúdo do arquivo
-	#var file_content = file.get_as_text()
-	#
-	#file.close()  # Fechar o arquivo após a leitura
-	#
-	## Usando JSON para analisar o conteúdo
-	#var json = JSON.parse(file_content)
-	#
-	#if json.error != OK:
-		#print("Erro ao analisar JSON: %s" % json.error_string)
-		#return null
-	#
-	#return json.result  # Retorna o dicionário com os dados JSON
+		#chart_line += 1
+		#end_of_chart = (chart_line >= chart_size)
+		#spended_time = 0
+		#print('Linha: ', chart_line, ' - Fim: ', end_of_chart)
+		#print("Next in: ", next_trigger_time)
+		#pass
+	next_note_time -= delta
+	pass
