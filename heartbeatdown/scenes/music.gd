@@ -1,55 +1,48 @@
 extends Node2D
+@onready var nota = preload("res://scenes/Utils/notaMusical.tscn")
 
+var player = AudioStreamPlayer.new()
 var chart_data = [];
 var next_note_time = 0
 var next_tempo_time = 0
+var ticks = 0
+var tpb = 0 #ticks_per_beat
+var time_elapsed = 0
+var audio = null
+var notes_sequence = null
 
-
-
-@onready var nota = preload("res://scenes/Utils/notaMusical.tscn")
 
 func spawn_note(index):
 	var _nota = nota.instantiate()
 	_nota.position = Vector2(100+(index*100), 100) # posição inicial (x=200, y=0)
 	add_child(_nota)
-
-func sumTimes(chart_data):
-	var tempo_total = {}
-	var notes_channel = chart_data["notes"]
-	for channel in notes_channel:
-		var note_data = notes_channel[channel]
-		for data in note_data:
-			tempo_total[channel] = tempo_total.get(channel, 0) + data["time"]
-	return tempo_total
+	
 
 func _ready():
 	chart_data = Utils.load_json_to_dict("res://assets/music_charts/music_01.json")
-	print("Tempos -->", Utils.sumTimes(chart_data))
+	audio = preload("res://assets/audio/tori_no_uta.ogg")
+	player.stream = audio
+	add_child(player)
 	
-	print("Tipo ", typeof(chart_data["notes"]["0"]))
+	player.play()
 	
+
+	self.notes_sequence = chart_data["notes"]["0"]
 	pass
 
+func getNextNote():
+	return self.notes_sequence.pop_front()
+	pass
+	
+	
 func _process(delta: float) -> void:
-	for data in chart_data["notes"]["0"]:
-		if (next_note_time <= 0):
-			#print(data)
-			next_note_time = data["time"]/60
-		#print("Passado :", spended_time, " | Tempo acumulado:", total_time)
-		#
-		#next_trigger_time = chart_data[chart_line].tempo
-		#for i in range(1, 7):
-			#var key = "btn%d" % i
-			#var value = chart_data[chart_line][key]
-			#if (value == "TRUE"):
-				#spawn_note(i)
-				#pass
-#
-		#chart_line += 1
-		#end_of_chart = (chart_line >= chart_size)
-		#spended_time = 0
-		#print('Linha: ', chart_line, ' - Fim: ', end_of_chart)
-		#print("Next in: ", next_trigger_time)
-		#pass
-	next_note_time -= delta
+	time_elapsed += delta
+	
+	if time_elapsed >= next_note_time:
+		var note = getNextNote()
+		next_note_time = note["total_time"]/100
+		print(note)
+		if (note["time"] > 0):
+			spawn_note(int(note["note"]) % 6)
+	
 	pass

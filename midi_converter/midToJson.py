@@ -1,29 +1,34 @@
 #https://en.wikipedia.org/wiki/General_MIDI#Program_change_events
 import mido
 import json
+import time
 
 
 midiPath = 'midi_files/tori_no_uta.mid'
 mid = mido.MidiFile(midiPath)
 
 ticks_per_beat = mid.ticks_per_beat
+tempo: 500_000
 
 music_data = {
-    'tickes_per_beat': ticks_per_beat,
+    'ticks_per_beat': ticks_per_beat,
     'notes': {},
     'program_change': {},
     'set_tempo': [],
 }
-
+track_time = 0
 for i, track in enumerate(mid.tracks):
+    track_time = 0
     for msg in track:
+        track_time += msg.time
         if msg.type == "note_on":
             channel = msg.channel
             music_data['notes'].setdefault(channel, [])
             music_data['notes'][channel].append({
                     'note' : msg.note,
                     'velocity': msg.velocity,
-                    'time': msg.time
+                    'time': msg.time,
+                    'total_time': track_time
             })
             pass
         elif msg.type == 'program_change': #Define o instrumento
@@ -61,11 +66,76 @@ for i, track in enumerate(mid.tracks):
         else:
             print(msg.type)
 
-
-print (ticks_per_beat)
-
 with open('conveted.txt', 'w', encoding='utf-8') as f:
     f.write(str(mid))
 
 with open('music_notes.json', 'w', encoding='utf-8') as f:
+    json.dump(music_data, f, ensure_ascii=False, indent=4)
+
+
+
+# ---- Preparação ----
+ticks_per_beat = music_data['ticks_per_beat']
+tempos = music_data['set_tempo']
+
+
+# # Função para calcular tempo_ms
+def apply_tempo_to_notes(notes, tempos, ticks_per_beat):
+    print(tempos[:5])
+    for channel, note_list in notes.items():
+        # note_list.sort(key=lambda x: x['time'])  # garantir ordem
+        aux_tempos = tempos
+        aux_tempo2 = None
+        aux_tempo_time = 0
+        tempo_ticks = 0
+        note_ticks = 0
+        current_tempo = 500000
+        ler_proximo_tempo = True
+
+        print("CH: ", channel)
+        for note in note_list:
+            print("-----------------------------------------")
+            print(tempo_ticks, " | ", note_ticks, " | ", current_tempo)
+            print(note)
+            if (len(aux_tempos) > 0 and tempo_ticks <= note_ticks):
+                aux_tempo2 = aux_tempos.pop(0)
+                ler_proximo_tempo = False
+            
+            if (tempo_ticks <= note_ticks and ler_proximo_tempo == False):
+                ler_proximo_tempo = True
+                note_ticks = 0
+                current_tempo = aux_tempo2['tempo']
+                tempo_ticks = aux_tempo2['time']
+                print("---", aux_tempo2)
+                print("---Novo tempo:", current_tempo, " próximo troca em ", tempo_ticks)
+
+            note['time_sec'] = mido.tick2second(note['total_time'], ticks_per_beat, current_tempo)
+            note['tempo'] = current_tempo
+            note_ticks += note['time']
+            print (note_ticks, " | ", note)
+            # input()
+
+            # note_tick = 
+            # note['time_ms'] = 
+
+             
+#             # aplicar set_tempo pendentes
+#             while tempo_idx < len(tempos) and tempos[tempo_idx]['time'] <= notephyton _tick:
+#                 t = tempos[tempo_idx]
+#                 delta_ticks = t['time'] - current_tick
+#                 current_ms += delta_ticks * current_tempo / ticks_per_beat / 1000
+#                 current_tick = t['time']
+#                 current_tempo = t['tempo']
+#                 tempo_idx += 1
+
+#             # converter delta até a nota
+#             delta_ticks = note_tick - current_tick
+#             note_ms = current_ms + delta_ticks * current_tempo / ticks_per_beat / 1000
+#             note['time_ms'] = note_ms
+    return notes
+
+# ---- Aplicar e gerar JSON ----
+music_data['notes'] = apply_tempo_to_notes(music_data['notes'], tempos, ticks_per_beat)
+
+with open("music_data_ready.json", "w", encoding="utf-8") as f:
     json.dump(music_data, f, ensure_ascii=False, indent=4)
