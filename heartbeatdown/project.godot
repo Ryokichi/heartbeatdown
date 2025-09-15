@@ -20,7 +20,6 @@ config/windows_native_icon="res://assets/image/nota.ico"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
-window/size/mode=1
 window/size/initial_position_type=3
 
 [rendering]

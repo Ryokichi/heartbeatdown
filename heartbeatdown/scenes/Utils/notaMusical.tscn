@@ -4,5 +4,6 @@
 [ext_resource type="Script" uid="uid://bcqg773n7jbnd" path="res://scenes/Utils/nota_musical.gd" id="2_2bidl"]
 
 [node name="Nota" type="Sprite2D"]
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_vbwj5")
 script = ExtResource("2_2bidl")
