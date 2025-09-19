@@ -10,6 +10,7 @@ static func load_json_to_dict(file_path: String) -> Dictionary:
 
 	print("Arquivo encontrado.")
 	var file = FileAccess.open(file_path, FileAccess.READ)
+	print(file)
 	var raw_text = file.get_as_text()
 	var content = JSON.parse_string(raw_text)
 

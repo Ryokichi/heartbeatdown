@@ -1,7 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwbatb8nej6sm"]
+[gd_scene load_steps=10 format=3 uid="uid://dwbatb8nej6sm"]
 
 [ext_resource type="Script" uid="uid://cvmksv1hftj7v" path="res://scenes/music.gd" id="1_ibx2e"]
-[ext_resource type="Texture2D" uid="uid://c6yrmikn787ql" path="res://assets/image/background.png" id="2_qnihg"]
+[ext_resource type="Texture2D" uid="uid://duhnlhmyilytx" path="res://assets/image/background_2.png" id="2_qnihg"]
+[ext_resource type="Texture2D" uid="uid://d4lueuuwl6053" path="res://assets/image/trilha.png" id="3_ejojg"]
+[ext_resource type="Texture2D" uid="uid://62gygsi41gc3" path="res://assets/image/frame.png" id="4_ejojg"]
+[ext_resource type="Texture2D" uid="uid://gj5elkka3c7i" path="res://assets/image/linha_trilha.png" id="4_keplp"]
+[ext_resource type="Script" uid="uid://dof4enw6wtq2i" path="res://scenes/nota_1.gd" id="5_d6bcn"]
+[ext_resource type="Texture2D" uid="uid://xe6wp228dwo5" path="res://assets/image/Capitu/capitu_02.png" id="5_mobtd"]
+[ext_resource type="Texture2D" uid="uid://cmy8lv7eki6fx" path="res://assets/image/Casmurro/cas_05.png" id="6_keplp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_keplp"]
+size = Vector2(60, 30)
 
 [node name="main_music" type="Node2D"]
 script = ExtResource("1_ibx2e")
@@ -9,3 +18,108 @@ script = ExtResource("1_ibx2e")
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
 texture = ExtResource("2_qnihg")
+
+[node name="Trilha" type="Node2D" parent="."]
+position = Vector2(640, 360)
+
+[node name="Background" type="Sprite2D" parent="Trilha"]
+modulate = Color(0.352941, 0.196078, 0.196078, 0.470588)
+texture = ExtResource("3_ejojg")
+
+[node name="LinhaTrilha1" type="Sprite2D" parent="Trilha"]
+modulate = Color(0.0196078, 0.0196078, 0.0196078, 0.580392)
+position = Vector2(-210, 0)
+scale = Vector2(0.2, 1)
+texture = ExtResource("4_keplp")
+
+[node name="LinhaTrilha2" type="Sprite2D" parent="Trilha"]
+modulate = Color(0.0196078, 0.0196078, 0.0196078, 0.580392)
+position = Vector2(-140, 0)
+scale = Vector2(0.2, 1)
+texture = ExtResource("4_keplp")
+
+[node name="LinhaTrilha3" type="Sprite2D" parent="Trilha"]
+modulate = Color(0.0196078, 0.0196078, 0.0196078, 0.580392)
+position = Vector2(-70, 0)
+scale = Vector2(0.2, 1)
+texture = ExtResource("4_keplp")
+
+[node name="LinhaTrilha4" type="Sprite2D" parent="Trilha"]
+modulate = Color(0.0196078, 0.0196078, 0.0196078, 0.580392)
+scale = Vector2(0.2, 1)
+texture = ExtResource("4_keplp")
+
+[node name="LinhaTrilha5" type="Sprite2D" parent="Trilha"]
+modulate = Color(0.0196078, 0.0196078, 0.0196078, 0.580392)
+position = Vector2(70, 0)
+scale = Vector2(0.2, 1)
+texture = ExtResource("4_keplp")
+
+[node name="LinhaTrilha6" type="Sprite2D" parent="Trilha"]
+modulate = Color(0.0196078, 0.0196078, 0.0196078, 0.580392)
+position = Vector2(140, 0)
+scale = Vector2(0.2, 1)
+texture = ExtResource("4_keplp")
+
+[node name="LinhaTrilha7" type="Sprite2D" parent="Trilha"]
+modulate = Color(0.0196078, 0.0196078, 0.0196078, 0.580392)
+position = Vector2(210, 0)
+scale = Vector2(0.2, 1)
+texture = ExtResource("4_keplp")
+
+[node name="LinhaTrilha8" type="Sprite2D" parent="Trilha"]
+modulate = Color(0.858824, 0.0196078, 0.0196078, 0.682353)
+position = Vector2(0, 300)
+rotation = 1.5708
+scale = Vector2(0.15, 0.6)
+texture = ExtResource("4_keplp")
+
+[node name="Nota1" type="Area2D" parent="Trilha"]
+position = Vector2(-175, 300)
+script = ExtResource("5_d6bcn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trilha/Nota1"]
+shape = SubResource("RectangleShape2D_keplp")
+
+[node name="Nota2" type="Area2D" parent="Trilha"]
+position = Vector2(-105, 300)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trilha/Nota2"]
+shape = SubResource("RectangleShape2D_keplp")
+
+[node name="Nota3" type="Area2D" parent="Trilha"]
+position = Vector2(-35, 300)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trilha/Nota3"]
+shape = SubResource("RectangleShape2D_keplp")
+
+[node name="Nota4" type="Area2D" parent="Trilha"]
+position = Vector2(35, 300)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trilha/Nota4"]
+shape = SubResource("RectangleShape2D_keplp")
+
+[node name="Nota5" type="Area2D" parent="Trilha"]
+position = Vector2(105, 300)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trilha/Nota5"]
+shape = SubResource("RectangleShape2D_keplp")
+
+[node name="Nota6" type="Area2D" parent="Trilha"]
+position = Vector2(175, 300)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trilha/Nota6"]
+shape = SubResource("RectangleShape2D_keplp")
+
+[node name="Frame" type="Sprite2D" parent="."]
+position = Vector2(642, 363)
+scale = Vector2(1.20084, 1.1576)
+texture = ExtResource("4_ejojg")
+
+[node name="Capitu02" type="Sprite2D" parent="."]
+position = Vector2(189, 360)
+texture = ExtResource("5_mobtd")
+
+[node name="Cas05" type="Sprite2D" parent="."]
+position = Vector2(1078, 360)
+texture = ExtResource("6_keplp")

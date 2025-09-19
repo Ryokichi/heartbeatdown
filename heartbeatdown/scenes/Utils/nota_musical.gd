@@ -1,6 +1,6 @@
 extends Sprite2D
 
-@export var speed: float = 335.0  # pixels por segundo
+@export var speed: float = 720/2.5  # 288 pixels por segundo
 @export var lifetime: float = 5.0 # segundos de vida
 
 var time_alive: float = 0.0

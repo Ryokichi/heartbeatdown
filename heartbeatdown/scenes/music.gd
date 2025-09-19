@@ -1,7 +1,7 @@
 extends Node2D
 @onready var nota = preload("res://scenes/Utils/notaMusical.tscn")
 
-var player = AudioStreamPlayer.new()
+var audio_player = AudioStreamPlayer.new()
 var chart_data = [];
 var curr_note = null
 var next_note_time = INF
@@ -20,8 +20,9 @@ func spawn_note(index):
 	var _nota = nota.instantiate()
 	var qtd_notas = 6
 	var pos = index % qtd_notas
-	_nota.position = Vector2(426+53+(pos*(465/qtd_notas)), -50) # posição inicial (x=200, y=0)
-	add_child(_nota)
+	#if (index % 8 < 6):
+	_nota.position = Vector2(-180+(pos*70), -648) # posição inicial (x=200, y=0)
+	$Trilha.add_child(_nota)
 
 func getNextNote():
 	if(len(self.notes_sequence) <= 0):
@@ -29,28 +30,28 @@ func getNextNote():
 	return self.notes_sequence.pop_front()
 
 func _ready():
-	chart_data = Utils.load_json_to_dict("res://assets/music_charts/music_01.json")
-	audio = preload("res://assets/audio/tori_no_uta.ogg")
-	self.player.stream = audio
-	add_child(self.player)
+	chart_data = Utils.load_json_to_dict("res://assets/music_charts/music_02.json")
+	audio = preload("res://assets/audio/music_02.ogg")
+	self.audio_player.stream = audio
+	add_child(self.audio_player)
 	
 	self.notes_sequence = chart_data["notes"]["0"]
 	self.curr_note = getNextNote()
 	
 	#time to wait deve ser o tempo a primeira nota demora par tocar
 	# mais a (altura da tela / velocidade da nota)
-	self.time_to_wait = curr_note['total_time']+2
+	self.time_to_wait = curr_note['elapsed']+3.2
 	pass
 
 func _process(delta: float) -> void:
 	time_elapsed += delta
 	if (time_elapsed >= self.time_to_wait):
 		print("PLAY")
-		self.player.play()
+		self.audio_player.play()
 		self.time_to_wait = INF
 
-	if time_elapsed >= self.curr_note['total_time']:
-		if (self.curr_note["velocity"] > 0):
+	if time_elapsed >= self.curr_note['elapsed']:
+		if (self.curr_note["velocity"] > 0 ):
 			spawn_note(int(curr_note["note"]))
 			print(self.curr_note)
 		self.curr_note = getNextNote()

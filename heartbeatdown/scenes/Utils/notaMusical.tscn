@@ -1,9 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://jyjeithus46x"]
+[gd_scene load_steps=4 format=3 uid="uid://jyjeithus46x"]
 
 [ext_resource type="Texture2D" uid="uid://b4r88x1lwt6ow" path="res://assets/image/nota.png" id="1_vbwj5"]
 [ext_resource type="Script" uid="uid://bcqg773n7jbnd" path="res://scenes/Utils/nota_musical.gd" id="2_2bidl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2bidl"]
 
 [node name="Nota" type="Sprite2D"]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_vbwj5")
 script = ExtResource("2_2bidl")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_2bidl")
