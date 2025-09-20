@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://flchr8ob1g0k"]
+
+[ext_resource type="Script" uid="uid://cxewbll3vyvxx" path="res://scenes/Utils/note_hit_box.gd" id="1_og0eq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tmxrm"]
+size = Vector2(60, 20)
+
+[node name="NoteHitBox" type="Area2D"]
+script = ExtResource("1_og0eq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_tmxrm")

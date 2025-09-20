@@ -5,6 +5,11 @@ extends Sprite2D
 
 var time_alive: float = 0.0
 
+func hit():
+	#Faz animaç
+	queue_free()
+	pass
+
 func _process(delta: float) -> void:
 	# movimenta no eixo Y
 	position.y += speed * delta

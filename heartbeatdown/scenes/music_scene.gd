@@ -1,18 +1,13 @@
 extends Node2D
-@onready var nota = preload("res://scenes/Utils/notaMusical.tscn")
+@onready var nota = preload("res://scenes/Utils/MusicNote.tscn")
 
+var audio = null
 var audio_player = AudioStreamPlayer.new()
 var chart_data = [];
 var curr_note = null
-var next_note_time = INF
-var next_tempo_time = 0
-var ticks = 0
-var tpb = 0 #ticks_per_beat
-var time_elapsed = 0
-var audio = null
+var music_is_over = false
 var notes_sequence = null
-var time_to_play = INF
-var first_note = true
+var time_elapsed = 0
 var time_to_wait = 0
 
 
@@ -41,18 +36,24 @@ func _ready():
 	#time to wait deve ser o tempo a primeira nota demora par tocar
 	# mais a (altura da tela / velocidade da nota)
 	self.time_to_wait = curr_note['elapsed']+3.2
+	print("Ready")
 	pass
 
 func _process(delta: float) -> void:
+	if (self.music_is_over):
+		return
+	
+	if (self.notes_sequence.is_empty()):
+		self.music_is_over = true
+
 	time_elapsed += delta
 	if (time_elapsed >= self.time_to_wait):
-		print("PLAY")
 		self.audio_player.play()
 		self.time_to_wait = INF
 
 	if time_elapsed >= self.curr_note['elapsed']:
 		if (self.curr_note["velocity"] > 0 ):
+			#print(self.curr_note)
 			spawn_note(int(curr_note["note"]))
-			print(self.curr_note)
 		self.curr_note = getNextNote()
 	pass
