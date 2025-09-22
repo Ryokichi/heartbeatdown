@@ -10,11 +10,15 @@ var notes_sequence = null
 var time_elapsed = 0
 var time_to_wait = 0
 
+var migue = 0
+
 
 func spawn_note(index):
 	var _nota = nota.instantiate()
 	var qtd_notas = 6
 	var pos = index % qtd_notas
+	pos = migue % 6
+	migue += 1
 	#if (index % 8 < 6):
 	_nota.position = Vector2(-180+(pos*70), -648) # posição inicial (x=200, y=0)
 	$Trilha.add_child(_nota)
@@ -28,10 +32,15 @@ func _ready():
 	chart_data = Utils.load_json_to_dict("res://assets/music_charts/music_02.json")
 	audio = preload("res://assets/audio/music_02.ogg")
 	self.audio_player.stream = audio
+	self.audio_player.volume_db = -15
 	add_child(self.audio_player)
 	
 	self.notes_sequence = chart_data["notes"]["0"]
 	self.curr_note = getNextNote()
+	
+	$Trilha/NoteHitBox1.set_key("hit_box_1")
+	$Trilha/NoteHitBox2.set_key("hit_box_2")
+	$Trilha/NoteHitBox3.set_key("hit_box_3")
 	
 	#time to wait deve ser o tempo a primeira nota demora par tocar
 	# mais a (altura da tela / velocidade da nota)

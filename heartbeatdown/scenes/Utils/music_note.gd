@@ -1,12 +1,17 @@
 extends Sprite2D
 
 @export var speed: float = 720/2.5  # 288 pixels por segundo
-@export var lifetime: float = 5.0 # segundos de vida
+@export var lifetime: float = 6.0 # segundos de vida
 
 var time_alive: float = 0.0
 
 func hit():
-	#Faz animaç
+	#Faz animacao de acerto
+	queue_free()
+	pass
+
+func miss():
+	print ("MISS")
 	queue_free()
 	pass
 

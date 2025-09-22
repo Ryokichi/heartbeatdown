@@ -90,6 +90,7 @@ position = Vector2(105, 300)
 position = Vector2(175, 300)
 
 [node name="Frame" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(642, 363)
 scale = Vector2(1.20084, 1.1576)
 texture = ExtResource("6_lm7ek")
