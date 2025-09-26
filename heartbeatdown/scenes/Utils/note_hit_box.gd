@@ -20,8 +20,12 @@ func _on_body_exited(body):
 func set_key(key_value):
 	self.assigned_key = key_value
 
-func _process(delta):
+func _process(_delta):
 	if (Input.is_action_just_pressed(self.assigned_key)):
 		if (notes_in.size() > 0 ):
 			var note = self.notes_in[0]
+			note.get_parent().hit()
 			self.notes_in.erase(note)
+		else:
+			print('implementar erro')
+			pass

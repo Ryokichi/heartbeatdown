@@ -1,11 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://dwbatb8nej6sm"]
+[gd_scene load_steps=8 format=3 uid="uid://dwbatb8nej6sm"]
 
 [ext_resource type="Script" uid="uid://cvmksv1hftj7v" path="res://scenes/music_scene.gd" id="1_8w75a"]
 [ext_resource type="Texture2D" uid="uid://duhnlhmyilytx" path="res://assets/image/background_2.png" id="2_5h200"]
 [ext_resource type="Texture2D" uid="uid://d4lueuuwl6053" path="res://assets/image/trilha.png" id="3_q32yi"]
 [ext_resource type="Texture2D" uid="uid://gj5elkka3c7i" path="res://assets/image/linha_trilha.png" id="4_21gdj"]
 [ext_resource type="PackedScene" uid="uid://flchr8ob1g0k" path="res://scenes/Utils/NoteHitBox.tscn" id="5_8w75a"]
-[ext_resource type="Texture2D" uid="uid://62gygsi41gc3" path="res://assets/image/frame.png" id="6_lm7ek"]
 [ext_resource type="Texture2D" uid="uid://xe6wp228dwo5" path="res://assets/image/Capitu/capitu_02.png" id="7_lglyv"]
 [ext_resource type="Texture2D" uid="uid://cmy8lv7eki6fx" path="res://assets/image/Casmurro/cas_05.png" id="8_hn8mv"]
 
@@ -93,7 +92,6 @@ position = Vector2(175, 300)
 visible = false
 position = Vector2(642, 363)
 scale = Vector2(1.20084, 1.1576)
-texture = ExtResource("6_lm7ek")
 
 [node name="Capitu02" type="Sprite2D" parent="."]
 position = Vector2(189, 360)

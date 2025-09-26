@@ -7,12 +7,13 @@ var time_alive: float = 0.0
 
 func hit():
 	#Faz animacao de acerto
+	print("Acertou!")
 	queue_free()
 	pass
 
 func miss():
-	print ("MISS")
-	queue_free()
+	#print ("MISS")
+	#queue_free()
 	pass
 
 func _process(delta: float) -> void:

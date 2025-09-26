@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcsa5ryail76k"
-path="res://.godot/imported/frame (Cópia).png-5b98751a5250d86b87ec376d802fc934.ctex"
+uid="uid://07p3hawl4kh5"
+path="res://.godot/imported/coracao_fechado.png-8d814b2dafabbde0e34156a36828d9d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/image/frame (Cópia).png"
-dest_files=["res://.godot/imported/frame (Cópia).png-5b98751a5250d86b87ec376d802fc934.ctex"]
+source_file="res://assets/image/coracao_fechado.png"
+dest_files=["res://.godot/imported/coracao_fechado.png-8d814b2dafabbde0e34156a36828d9d1.ctex"]
 
 [params]
 

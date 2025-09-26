@@ -30,7 +30,7 @@ func getNextNote():
 
 func _ready():
 	chart_data = Utils.load_json_to_dict("res://assets/music_charts/music_02.json")
-	audio = preload("res://assets/audio/music_02.ogg")
+	audio = preload("res://assets/audio/Minecraft.mp3")
 	self.audio_player.stream = audio
 	self.audio_player.volume_db = -15
 	add_child(self.audio_player)
@@ -41,6 +41,9 @@ func _ready():
 	$Trilha/NoteHitBox1.set_key("hit_box_1")
 	$Trilha/NoteHitBox2.set_key("hit_box_2")
 	$Trilha/NoteHitBox3.set_key("hit_box_3")
+	$Trilha/NoteHitBox4.set_key("hit_box_4")
+	$Trilha/NoteHitBox5.set_key("hit_box_5")
+	$Trilha/NoteHitBox6.set_key("hit_box_6")
 	
 	#time to wait deve ser o tempo a primeira nota demora par tocar
 	# mais a (altura da tela / velocidade da nota)
