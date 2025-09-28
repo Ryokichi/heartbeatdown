@@ -17,7 +17,7 @@ func spawn_note(index):
 	var _nota = nota.instantiate()
 	var qtd_notas = 6
 	var pos = index % qtd_notas
-	pos = migue % 6
+	pos = migue % 4 + 1
 	migue += 1
 	#if (index % 8 < 6):
 	_nota.position = Vector2(-180+(pos*70), -648) # posição inicial (x=200, y=0)
@@ -30,7 +30,7 @@ func getNextNote():
 
 func _ready():
 	chart_data = Utils.load_json_to_dict("res://assets/music_charts/music_02.json")
-	audio = preload("res://assets/audio/Minecraft.mp3")
+	audio = preload("res://assets/audio/music_02.ogg")
 	self.audio_player.stream = audio
 	self.audio_player.volume_db = -15
 	add_child(self.audio_player)

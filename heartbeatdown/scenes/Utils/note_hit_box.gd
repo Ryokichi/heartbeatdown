@@ -22,6 +22,7 @@ func set_key(key_value):
 
 func _process(_delta):
 	if (Input.is_action_just_pressed(self.assigned_key)):
+		print("hit ", self.assigned_key)
 		if (notes_in.size() > 0 ):
 			var note = self.notes_in[0]
 			note.get_parent().hit()
