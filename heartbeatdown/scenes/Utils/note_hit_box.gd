@@ -20,6 +20,9 @@ func _on_body_exited(body):
 func set_key(key_value):
 	self.assigned_key = key_value
 
+func _input(event: InputEvent) -> void:
+	pass
+
 func _process(_delta):
 	if (Input.is_action_just_pressed(self.assigned_key)):
 		var bodies = get_overlapping_bodies();

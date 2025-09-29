@@ -27,9 +27,9 @@ static func sumTimes(chart_data):
 			tempo_total[channel] = tempo_total.get(channel, 0) + data["time"]
 	return tempo_total
 	
-static func countNotes(chart_data, channel):
+static func countNotes(chart_data):
 	var total_notes = 0
-	for note in chart_data["notes"][channel]:
+	for note in chart_data:
 		if note["velocity"] > 0:
 			total_notes += 1
 		pass

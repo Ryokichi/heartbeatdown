@@ -1,12 +1,14 @@
-[gd_scene load_steps=8 format=3 uid="uid://dwbatb8nej6sm"]
+[gd_scene load_steps=10 format=3 uid="uid://dwbatb8nej6sm"]
 
 [ext_resource type="Script" uid="uid://cvmksv1hftj7v" path="res://scenes/music_scene.gd" id="1_8w75a"]
 [ext_resource type="Texture2D" uid="uid://duhnlhmyilytx" path="res://assets/image/background_2.png" id="2_5h200"]
 [ext_resource type="Texture2D" uid="uid://d4lueuuwl6053" path="res://assets/image/trilha.png" id="3_q32yi"]
 [ext_resource type="Texture2D" uid="uid://gj5elkka3c7i" path="res://assets/image/linha_trilha.png" id="4_21gdj"]
-[ext_resource type="PackedScene" uid="uid://flchr8ob1g0k" path="res://scenes/utils/NoteHitBox.tscn" id="5_8w75a"]
-[ext_resource type="PackedScene" uid="uid://cythev8v5wdii" path="res://scenes/utils/Casmurro.tscn" id="7_7ram6"]
+[ext_resource type="PackedScene" uid="uid://flchr8ob1g0k" path="res://scenes/Utils/NoteHitBox.tscn" id="5_8w75a"]
+[ext_resource type="PackedScene" uid="uid://cythev8v5wdii" path="res://scenes/Utils/Casmurro.tscn" id="7_7ram6"]
 [ext_resource type="Texture2D" uid="uid://xe6wp228dwo5" path="res://assets/image/Capitu/capitu_02.png" id="7_lglyv"]
+[ext_resource type="Texture2D" uid="uid://b3mgwhxv21epy" path="res://assets/image/progress_bar_prog.png" id="8_5h200"]
+[ext_resource type="Texture2D" uid="uid://chwwffsvfnhl7" path="res://assets/image/progress_bar_over.png" id="9_q32yi"]
 
 [node name="main_music" type="Node2D"]
 script = ExtResource("1_8w75a")
@@ -99,3 +101,23 @@ texture = ExtResource("7_lglyv")
 
 [node name="Casmurro" parent="." instance=ExtResource("7_7ram6")]
 position = Vector2(1083, 637)
+
+[node name="ProgressBar" type="TextureProgressBar" parent="."]
+offset_left = 230.0
+offset_top = 5.0
+offset_right = 735.0
+offset_bottom = 475.0
+scale = Vector2(0.3, 0.3)
+value = 50.0
+fill_mode = 3
+texture_under = ExtResource("8_5h200")
+texture_over = ExtResource("9_q32yi")
+texture_progress = ExtResource("8_5h200")
+tint_under = Color(0.158474, 0, 0.00523733, 1)
+tint_progress = Color(0.944644, 0.182118, 0.281042, 1)
+
+[node name="Info" type="RichTextLabel" parent="."]
+offset_left = 938.0
+offset_top = 21.0
+offset_right = 1163.0
+offset_bottom = 57.0
