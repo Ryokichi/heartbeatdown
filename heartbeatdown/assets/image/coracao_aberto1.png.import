@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmy8lv7eki6fx"
-path="res://.godot/imported/cas_05.png-c6be17a50ea3f23b7d41f09c594069db.ctex"
+uid="uid://bladpp4e7kpjk"
+path="res://.godot/imported/coracao_aberto1.png-2db8d618c50a72629f464114c636eee1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/image/Casmurro/cas_05.png"
-dest_files=["res://.godot/imported/cas_05.png-c6be17a50ea3f23b7d41f09c594069db.ctex"]
+source_file="res://assets/image/coracao_aberto1.png"
+dest_files=["res://.godot/imported/coracao_aberto1.png-2db8d618c50a72629f464114c636eee1.ctex"]
 
 [params]
 

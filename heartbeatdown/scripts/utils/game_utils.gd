@@ -1,4 +1,4 @@
-class_name Utils
+class_name GameUtils
 
 static func load_json_to_dict(file_path: String) -> Dictionary:
 	print(file_path)
@@ -26,3 +26,11 @@ static func sumTimes(chart_data):
 		for data in note_data:
 			tempo_total[channel] = tempo_total.get(channel, 0) + data["time"]
 	return tempo_total
+	
+static func countNotes(chart_data, channel):
+	var total_notes = 0
+	for note in chart_data["notes"][channel]:
+		if note["velocity"] > 0:
+			total_notes += 1
+		pass
+	return total_notes

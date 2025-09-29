@@ -22,11 +22,13 @@ func set_key(key_value):
 
 func _process(_delta):
 	if (Input.is_action_just_pressed(self.assigned_key)):
+		var bodies = get_overlapping_bodies();
+		print (bodies) 
 		print("hit ", self.assigned_key)
 		if (notes_in.size() > 0 ):
 			var note = self.notes_in[0]
 			note.get_parent().hit()
 			self.notes_in.erase(note)
 		else:
-			print('implementar erro')
+			#print('implementar erro')
 			pass

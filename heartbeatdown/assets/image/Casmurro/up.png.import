@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqhqdjpac7esk"
-path="res://.godot/imported/cas_03.png-57fa563dde49e439af06b325d94ea5c5.ctex"
+uid="uid://bkuymcpygdfcx"
+path="res://.godot/imported/up.png-436d17066d0de32c167f01485b795400.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/image/Casmurro/cas_03.png"
-dest_files=["res://.godot/imported/cas_03.png-57fa563dde49e439af06b325d94ea5c5.ctex"]
+source_file="res://assets/image/Casmurro/up.png"
+dest_files=["res://.godot/imported/up.png-436d17066d0de32c167f01485b795400.ctex"]
 
 [params]
 

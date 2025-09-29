@@ -2,7 +2,7 @@ extends Sprite2D
 
 @export var speed: float = 720/2.5  # 288 pixels por segundo
 @export var lifetime: float = 6.0 # segundos de vida
-@export var scale_speed: float = 20
+@export var scale_speed: float = 100
 @export var fade_speed: float = 1.0
 
 var spriteA = preload("res://assets/image/coracao_fechado.png")
@@ -38,5 +38,4 @@ func _process(delta: float) -> void:
 		self.modulate.a -= self.fade_speed * delta
 		self.modulate.a = clamp(modulate.a, 0.0, 1.0)
 		pass
-	
 	

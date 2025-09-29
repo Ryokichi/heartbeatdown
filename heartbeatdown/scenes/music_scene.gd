@@ -9,10 +9,11 @@ var music_is_over = false
 var notes_sequence = null
 var time_elapsed = 0
 var time_to_wait = 0
+var player_notes = 0
+var boss_notes = 0
+
 
 var migue = 0
-
-
 func spawn_note(index):
 	var _nota = nota.instantiate()
 	var qtd_notas = 6
@@ -29,12 +30,14 @@ func getNextNote():
 	return self.notes_sequence.pop_front()
 
 func _ready():
-	chart_data = Utils.load_json_to_dict("res://assets/music_charts/music_02.json")
+	chart_data = GameUtils.load_json_to_dict("res://assets/music_charts/music_02.json")
 	audio = preload("res://assets/audio/music_02.ogg")
 	self.audio_player.stream = audio
 	self.audio_player.volume_db = -15
 	add_child(self.audio_player)
 	
+	#self.boss_notes = GameUtils.countNotes(chart_data,1)
+	self.player_notes = GameUtils.countNotes(chart_data,0)
 	self.notes_sequence = chart_data["notes"]["0"]
 	self.curr_note = getNextNote()
 	
