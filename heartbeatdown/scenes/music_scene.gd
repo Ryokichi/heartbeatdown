@@ -2,20 +2,21 @@ extends Node2D
 @onready var nota = preload("res://scenes/Utils/MusicNote.tscn")
 
 var audio = null
-var audio_player = AudioStreamPlayer.new()
-var chart_data = [];
-var curr_note = null
-var music_is_over = false
-var notes_sequence = null
-var time_elapsed = 0
-var time_to_wait = 0
-var player_notes = 0
-var boss_notes = 0
+var audioPlayer = AudioStreamPlayer.new()
+var chartData = [];
+var currNote = null
+var musicIsOver = false
+var notesSequence = null
+var timeElapsed = 0
+var timeToWait = 0
+var playerNotes = 0
+var bossNotes = 0
 var points = 0
+var totalNotes = 0
 
-var game_speed = 1
+var gameSpeed = 1
 
-var note_colors = [
+var noteColors = [
 	Color8(140, 170, 220, 255),
 	Color8(130, 190, 140, 255),
 	Color8(190, 170, 80, 255),
@@ -32,31 +33,36 @@ func spawn_note(index):
 	pos = self.migue % 4 + 1
 	self.migue += 1
 	_nota.position = Vector2(-174+(pos*70), -648)
-	_nota.self_modulate = self.note_colors[pos]
+	_nota.self_modulate = self.noteColors[pos]
 	$Trilha.add_child(_nota)
 
 func getNextNote():
-	if(len(self.notes_sequence) <= 0):
+	if(len(self.notesSequence) <= 0):
 		return {}
-	return self.notes_sequence.pop_front()
+	return self.notesSequence.pop_front()
 
 func change_speed(val: float) -> void: 
-	self.game_speed = clamp(self.game_speed + val, 0, 2)
-	self.audio_player.pitch_scale = self.game_speed
-	Engine.time_scale = self.game_speed
+	self.gameSpeed = clamp(self.gameSpeed + val, 0, 2)
+	self.audioPlayer.pitch_scale = self.gameSpeed
+	Engine.time_scale = self.gameSpeed
 	pass
 
+func set_timeToWait(time):
+	#time to wait deve ser o tempo que a primeira nota demora par tocar
+	# mais a (altura da tela / velocidade da nota)
+	self.timeToWait = time
+
 func _ready():
-	chart_data = GameUtils.load_json_to_dict("res://assets/music_charts/music_02.json")
+	chartData = GameUtils.load_json_to_dict("res://assets/music_charts/music_02.json")
 	audio = preload("res://assets/audio/music_02.ogg")
-	self.audio_player.stream = audio
-	self.audio_player.volume_db = -15
-	add_child(self.audio_player)
+	self.audioPlayer.stream = audio
+	self.audioPlayer.volume_db = -15
+	add_child(self.audioPlayer)
 	
-	self.notes_sequence = chart_data["notes"]["0"]
-	self.player_notes = GameUtils.countNotes(chart_data["notes"]["0"])
-	#self.boss_notes = GameUtils.countNotes(chart_data,1)
-	self.curr_note = getNextNote()
+	self.notesSequence = chartData["notes"]["0"]
+	self.playerNotes = GameUtils.countNotes(chartData["notes"]["0"])
+	#self.bossNotes = GameUtils.countNotes(chartData,1)
+	self.currNote = getNextNote()
 	
 	$Trilha/NoteHitBox1.set_key("hit_box_1")
 	$Trilha/NoteHitBox2.set_key("hit_box_2")
@@ -65,23 +71,85 @@ func _ready():
 	$Trilha/NoteHitBox5.set_key("hit_box_5")
 	$Trilha/NoteHitBox6.set_key("hit_box_6")
 	
-	$Trilha/NoteHitBox1/Sprite.self_modulate = note_colors[0]
-	$Trilha/NoteHitBox2/Sprite.self_modulate = note_colors[1]
-	$Trilha/NoteHitBox3/Sprite.self_modulate = note_colors[2]
-	$Trilha/NoteHitBox4/Sprite.self_modulate = note_colors[3]
-	$Trilha/NoteHitBox5/Sprite.self_modulate = note_colors[4]
-	$Trilha/NoteHitBox6/Sprite.self_modulate = note_colors[5]
+	# Conectar sinais de hit
+	$Trilha/NoteHitBox1.hit_success.connect(onHit)
+	$Trilha/NoteHitBox2.hit_success.connect(onHit)
+	$Trilha/NoteHitBox3.hit_success.connect(onHit)
+	$Trilha/NoteHitBox4.hit_success.connect(onHit)
+	$Trilha/NoteHitBox5.hit_success.connect(onHit)
+	$Trilha/NoteHitBox6.hit_success.connect(onHit)
 	
-	#time to wait deve ser o tempo a primeira nota demora par tocar
-	# mais a (altura da tela / velocidade da nota)
-	self.time_to_wait = curr_note['elapsed']+3.2+(1.2)
+	# Conectar sinais de miss
+	$Trilha/NoteHitBox1.hit_miss.connect(onMiss)
+	$Trilha/NoteHitBox2.hit_miss.connect(onMiss)
+	$Trilha/NoteHitBox3.hit_miss.connect(onMiss)
+	$Trilha/NoteHitBox4.hit_miss.connect(onMiss)
+	$Trilha/NoteHitBox5.hit_miss.connect(onMiss)
+	$Trilha/NoteHitBox6.hit_miss.connect(onMiss)
+	
+	# Definir cores originais dos hit boxes
+	$Trilha/NoteHitBox1.set_original_color(noteColors[0])
+	$Trilha/NoteHitBox2.set_original_color(noteColors[1])
+	$Trilha/NoteHitBox3.set_original_color(noteColors[2])
+	$Trilha/NoteHitBox4.set_original_color(noteColors[3])
+	$Trilha/NoteHitBox5.set_original_color(noteColors[4])
+	$Trilha/NoteHitBox6.set_original_color(noteColors[5])
+	
+	
+	set_timeToWait(self.currNote['elapsed']+3.2+(1.2))
 	print("Ready")
 	pass
 
-func _process(delta: float) -> void:
-	$Info.text = "Vel: %.1f | Tempo: %.2f\n" % [self.game_speed, self.time_elapsed]
+func onHit(note_data):
+	self.points += 1
+	
+	# Usar os dados recebidos
+	print("Hit! Accuracy: ", note_data.accuracy)
+	print("Hit Box: ", note_data.hit_box_id)
+	print("Note Position: ", note_data.position)
+	
+	# Dar pontos baseado na precisão
+	match note_data.accuracy:
+		"perfect":
+			self.points += 10
+		"good":
+			self.points += 7
+		"ok":
+			self.points += 5
+		"miss":
+			self.points += 1
+	
+	# Adicionar efeitos visuais baseado na precisão
+	show_hit_effect(note_data.accuracy)
+	pass
 
-	if (self.music_is_over):
+func show_hit_effect(accuracy_type):
+	# Implementar efeitos visuais baseado na precisão
+	match accuracy_type:
+		"perfect":
+			# Efeito dourado
+			pass
+		"good":
+			# Efeito verde
+			pass
+		"ok":
+			# Efeito amarelo
+			pass
+	pass
+
+func onMiss():
+	pass
+
+func _process(delta: float) -> void:
+	$Info.text = """Vel: %.1f | Tempo: %.2f\n 
+	Notas %d / %d""" % [
+		self.gameSpeed, 
+		self.timeElapsed, 
+		self.points, 
+		self.playerNotes
+	]
+
+	if (self.musicIsOver):
 		return
 
 	if Input.is_action_just_pressed("speed_down"):
@@ -90,17 +158,17 @@ func _process(delta: float) -> void:
 		change_speed(0.1)
 	pass
 	
-	if (self.notes_sequence.is_empty()):
-		self.music_is_over = true
+	if (self.notesSequence.is_empty()):
+		self.musicIsOver = true
 
-	self.time_elapsed += delta
-	if (time_elapsed >= self.time_to_wait):
-		self.audio_player.play()
-		self.time_to_wait = INF
+	self.timeElapsed += delta
+	if (timeElapsed >= self.timeToWait):
+		self.audioPlayer.play()
+		self.timeToWait = INF
 
-	while self.time_elapsed >= self.curr_note['elapsed']:
-	#if time_elapsed >= self.curr_note['elapsed']:
-		if (self.curr_note["velocity"] > 0 ):
-			spawn_note(int(self.curr_note["note"]))
-		self.curr_note = getNextNote()
+	while self.timeElapsed >= self.currNote['elapsed']:
+	#if timeElapsed >= self.currNote['elapsed']:
+		if (self.currNote["velocity"] > 0 ):
+			spawn_note(int(self.currNote["note"]))
+		self.currNote = getNextNote()
 	pass

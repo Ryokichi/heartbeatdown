@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://07p3hawl4kh5"
-path="res://.godot/imported/coracao_fechado.png-8d814b2dafabbde0e34156a36828d9d1.ctex"
+uid="uid://dwlxteu7h6v2y"
+path="res://.godot/imported/BotãoPause.png-8c1eba92f78bdbf516f8a6ca682d82e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/image/coracao_fechado.png"
-dest_files=["res://.godot/imported/coracao_fechado.png-8d814b2dafabbde0e34156a36828d9d1.ctex"]
+source_file="res://assets/image/UI/BotãoPause.png"
+dest_files=["res://.godot/imported/BotãoPause.png-8c1eba92f78bdbf516f8a6ca682d82e4.ctex"]
 
 [params]
 

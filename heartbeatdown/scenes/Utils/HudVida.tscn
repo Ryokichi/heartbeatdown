@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://c0llsbusf38pr"]
+
+[ext_resource type="Texture2D" uid="uid://6ihisheqye4t" path="res://assets/image/UI/hudVidaUnder.png" id="1_l51hs"]
+[ext_resource type="Texture2D" uid="uid://ccos4eacqdkr6" path="res://assets/image/UI/hudVidaOver.png" id="2_wgsef"]
+[ext_resource type="Script" uid="uid://dttejt4gqxbyq" path="res://texture_progress_bar.gd" id="3_rhj23"]
+[ext_resource type="Texture2D" uid="uid://u4wlv77ahmp8" path="res://assets/image/UI/hudVidaBG.png" id="4_woabn"]
+
+[node name="TextureProgressBar" type="TextureProgressBar"]
+z_index = 1
+offset_right = 40.0
+offset_bottom = 40.0
+value = 65.0
+fill_mode = 3
+texture_under = ExtResource("1_l51hs")
+texture_over = ExtResource("2_wgsef")
+texture_progress = ExtResource("1_l51hs")
+tint_under = Color(0.188235, 0, 0, 1)
+tint_progress = Color(0.980392, 0.117647, 0.117647, 1)
+script = ExtResource("3_rhj23")
+
+[node name="HudVidaBg" type="Sprite2D" parent="."]
+self_modulate = Color(0.545098, 1, 0.2, 1)
+z_index = -1
+position = Vector2(137, 60)
+texture = ExtResource("4_woabn")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcargkhhfku5h"
-path="res://.godot/imported/coracao_aberto.png-12e1c2bae155ebbed9c93cdd20b941fa.ctex"
+uid="uid://u4wlv77ahmp8"
+path="res://.godot/imported/hudVidaBG.png-8dbe2fe6e9d4666da91e5526c6e391cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/image/coracao_aberto.png"
-dest_files=["res://.godot/imported/coracao_aberto.png-12e1c2bae155ebbed9c93cdd20b941fa.ctex"]
+source_file="res://assets/image/UI/hudVidaBG.png"
+dest_files=["res://.godot/imported/hudVidaBG.png-8dbe2fe6e9d4666da91e5526c6e391cd.ctex"]
 
 [params]
 

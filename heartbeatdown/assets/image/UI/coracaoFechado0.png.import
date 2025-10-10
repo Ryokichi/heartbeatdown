@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://duhnlhmyilytx"
-path="res://.godot/imported/background_2.png-f535f7145a20ff31f3939f4256dfcea9.ctex"
+uid="uid://o113xubrergx"
+path="res://.godot/imported/coracaoFechado0.png-8cfd4ac1b7e2bedc0a34b3acd8100eb0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/image/background_2.png"
-dest_files=["res://.godot/imported/background_2.png-f535f7145a20ff31f3939f4256dfcea9.ctex"]
+source_file="res://assets/image/UI/coracaoFechado0.png"
+dest_files=["res://.godot/imported/coracaoFechado0.png-8cfd4ac1b7e2bedc0a34b3acd8100eb0.ctex"]
 
 [params]
 
