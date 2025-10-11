@@ -13,6 +13,7 @@ var playerNotes = 0
 var bossNotes = 0
 var points = 0
 var totalNotes = 0
+var playerLife = 100
 
 var gameSpeed = 1
 
@@ -25,13 +26,13 @@ var noteColors = [
 	Color8(20, 100, 210, 255)
 ]
 
-var migue = 0
+var inSequence = 0
 func spawn_note(index):
 	var _nota = nota.instantiate()
 	var qtd_notas = 6
 	var pos = index % qtd_notas
-	pos = self.migue % 4 + 1
-	self.migue += 1
+	pos = self.inSequence % 4 + 1
+	self.inSequence += 1
 	_nota.position = Vector2(-174+(pos*70), -648)
 	_nota.self_modulate = self.noteColors[pos]
 	$Trilha.add_child(_nota)
@@ -100,27 +101,28 @@ func _ready():
 	print("Ready")
 	pass
 
-func onHit(note_data):
+func onHit(noteData):
 	self.points += 1
-	
 	# Usar os dados recebidos
-	print("Hit! Accuracy: ", note_data.accuracy)
-	print("Hit Box: ", note_data.hit_box_id)
-	print("Note Position: ", note_data.position)
+	print("Hit! Accuracy: ", noteData.accuracy)
+	# print("Hit Box: ", noteData.hitBoxId)
+	# print("Note Position: ", noteData.position)
 	
 	# Dar pontos baseado na precisão
-	match note_data.accuracy:
+	match noteData.accuracy:
 		"perfect":
-			self.points += 10
+			self.playerLife += 3
 		"good":
-			self.points += 7
+			self.playerLife += 2
 		"ok":
-			self.points += 5
+			self.playerLife += 1
 		"miss":
-			self.points += 1
+			self.playerLife -= 1
+	self.playerLife = clamp(self.playerLife, 0, 100)
+	$PlayerLife.value = self.playerLife
 	
 	# Adicionar efeitos visuais baseado na precisão
-	show_hit_effect(note_data.accuracy)
+	show_hit_effect(noteData.accuracy)
 	pass
 
 func show_hit_effect(accuracy_type):
@@ -138,10 +140,14 @@ func show_hit_effect(accuracy_type):
 	pass
 
 func onMiss():
+	self.playerLife -= 3
+	self.playerLife = clamp(self.playerLife, 0, 100)
+	$PlayerLife.value = self.playerLife
+	# print("Le Miss:", self.playerLife);
 	pass
 
 func _process(delta: float) -> void:
-	$Info.text = """Vel: %.1f | Tempo: %.2f\n 
+	$Info.text = """Vel: %.1f | Tempo: %.2f
 	Notas %d / %d""" % [
 		self.gameSpeed, 
 		self.timeElapsed, 

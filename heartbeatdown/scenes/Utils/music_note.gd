@@ -9,7 +9,6 @@ var spriteA = preload("res://assets/image/UI/coracaoFechado.png")
 var spriteB = preload("res://assets/image/UI/coracaoAberto.png")
 var exploding = false
 
-
 func _ready() -> void:
 	self.texture = spriteA
 	pass
@@ -20,40 +19,32 @@ func hit():
 	self.texture = spriteB
 	self.lifetime = 0.3
 	self.exploding = true
-	print("Acertou!")
+	# print("Acertou!")
 	pass
 
 func miss():
-	#print ("MISS")
-	#queue_free()
-	#pass
-#
-#func shake_on_error():
-	# Salvar posição original
+	# print("MISS")
+
 	var original_position = position
 
 	# Criar tremor
 	var tween = create_tween()
-	tween.set_loops(3)  # 10 tremores
-
-	# Mover para direita
-	tween.tween_property(self, "position", original_position + Vector2(5, 0), 0.05)
-	# Mover para esquerda
-	tween.tween_property(self, "position", original_position + Vector2(-5, 0), 0.05)
-
-	# Voltar à posição original
+	tween.set_loops(3)
+	tween.tween_property(self, "position", original_position + Vector2(3, 0), 0.03)
+	tween.tween_property(self, "position", original_position + Vector2(-3, 0), 0.03)
 	tween.tween_callback(func(): position = original_position)
 	pass
 
 func _process(delta: float) -> void:
 	if self.lifetime <= 0:
 		queue_free()  # destrói o nó
-	self.lifetime -= delta # diminui tempo de vida
-	self.position.y += speed * delta
-	
+
 	if self.exploding:
 		self.scale += Vector2.ONE * scale_speed * delta
 		self.modulate.a -= self.fade_speed * delta
 		self.modulate.a = clamp(modulate.a, 0.0, 1.0)
-		pass
+		return
+
+	self.lifetime -= delta # diminui tempo de vida
+	self.position.y += speed * delta
 	

@@ -2,14 +2,14 @@
 
 [ext_resource type="Texture2D" uid="uid://6ihisheqye4t" path="res://assets/image/UI/hudVidaUnder.png" id="1_l51hs"]
 [ext_resource type="Texture2D" uid="uid://ccos4eacqdkr6" path="res://assets/image/UI/hudVidaOver.png" id="2_wgsef"]
-[ext_resource type="Script" uid="uid://dttejt4gqxbyq" path="res://texture_progress_bar.gd" id="3_rhj23"]
+[ext_resource type="Script" uid="uid://dttejt4gqxbyq" path="res://scenes/Utils/hud_vida.gd" id="3_rhj23"]
 [ext_resource type="Texture2D" uid="uid://u4wlv77ahmp8" path="res://assets/image/UI/hudVidaBG.png" id="4_woabn"]
 
 [node name="TextureProgressBar" type="TextureProgressBar"]
 z_index = 1
 offset_right = 40.0
 offset_bottom = 40.0
-value = 65.0
+value = 100.0
 fill_mode = 3
 texture_under = ExtResource("1_l51hs")
 texture_over = ExtResource("2_wgsef")
