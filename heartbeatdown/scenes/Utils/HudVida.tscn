@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://c0llsbusf38pr"]
+[gd_scene load_steps=6 format=3 uid="uid://c0llsbusf38pr"]
 
 [ext_resource type="Texture2D" uid="uid://6ihisheqye4t" path="res://assets/image/UI/hudVidaUnder.png" id="1_l51hs"]
 [ext_resource type="Texture2D" uid="uid://ccos4eacqdkr6" path="res://assets/image/UI/hudVidaOver.png" id="2_wgsef"]
 [ext_resource type="Script" uid="uid://dttejt4gqxbyq" path="res://scenes/Utils/hud_vida.gd" id="3_rhj23"]
 [ext_resource type="Texture2D" uid="uid://u4wlv77ahmp8" path="res://assets/image/UI/hudVidaBG.png" id="4_woabn"]
+[ext_resource type="FontFile" uid="uid://nrjupcmps71n" path="res://assets/fonts/Satisfy.ttf" id="5_wgsef"]
 
 [node name="TextureProgressBar" type="TextureProgressBar"]
 z_index = 1
@@ -19,7 +20,31 @@ tint_progress = Color(0.980392, 0.117647, 0.117647, 1)
 script = ExtResource("3_rhj23")
 
 [node name="HudVidaBg" type="Sprite2D" parent="."]
-self_modulate = Color(0.545098, 1, 0.2, 1)
+self_modulate = Color(0.117647, 0.117647, 0.235294, 1)
 z_index = -1
 position = Vector2(137, 60)
 texture = ExtResource("4_woabn")
+
+[node name="TextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.65
+anchor_top = 0.7
+anchor_right = 0.65
+anchor_bottom = 0.7
+offset_left = -83.75
+offset_top = -24.0
+offset_right = 86.25
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(85, 0)
+theme_override_fonts/normal_font = ExtResource("5_wgsef")
+theme_override_font_sizes/bold_italics_font_size = 24
+theme_override_font_sizes/normal_font_size = 24
+text = "Nome"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false

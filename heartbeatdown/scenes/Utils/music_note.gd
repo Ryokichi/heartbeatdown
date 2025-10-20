@@ -25,9 +25,8 @@ func hit():
 func miss():
 	# print("MISS")
 
-	var original_position = position
-
 	# Criar tremor
+	var original_position = position
 	var tween = create_tween()
 	tween.set_loops(3)
 	tween.tween_property(self, "position", original_position + Vector2(3, 0), 0.03)

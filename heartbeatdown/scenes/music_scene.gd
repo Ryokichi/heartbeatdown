@@ -55,7 +55,7 @@ func set_timeToWait(time):
 
 func _ready():
 	chartData = GameUtils.load_json_to_dict("res://assets/music_charts/music_02.json")
-	audio = preload("res://assets/audio/music_02.ogg")
+	audio = preload("res://assets/audio/musica_01.ogg")
 	self.audioPlayer.stream = audio
 	self.audioPlayer.volume_db = -15
 	add_child(self.audioPlayer)
@@ -64,6 +64,10 @@ func _ready():
 	self.playerNotes = GameUtils.countNotes(chartData["notes"]["0"])
 	#self.bossNotes = GameUtils.countNotes(chartData,1)
 	self.currNote = getNextNote()
+	
+	$PlayerLife.set_inveted_mode(true)
+	$PlayerLife.set_label("D. Casmurro")
+	$BossLife.set_label("Capitu")
 	
 	$Trilha/NoteHitBox1.set_key("hit_box_1")
 	$Trilha/NoteHitBox2.set_key("hit_box_2")
@@ -96,15 +100,15 @@ func _ready():
 	$Trilha/NoteHitBox5.set_original_color(noteColors[4])
 	$Trilha/NoteHitBox6.set_original_color(noteColors[5])
 	
-	
 	set_timeToWait(self.currNote['elapsed']+3.2+(1.2))
 	print("Ready")
 	pass
 
 func onHit(noteData):
+	print(noteData)
 	self.points += 1
 	# Usar os dados recebidos
-	print("Hit! Accuracy: ", noteData.accuracy)
+	#print("Hit! Accuracy: ", noteData.accuracy)
 	# print("Hit Box: ", noteData.hitBoxId)
 	# print("Note Position: ", noteData.position)
 	
@@ -120,6 +124,7 @@ func onHit(noteData):
 			self.playerLife -= 1
 	self.playerLife = clamp(self.playerLife, 0, 100)
 	$PlayerLife.value = self.playerLife
+	$Casmurro.play_hit(noteData.hitBoxId)
 	
 	# Adicionar efeitos visuais baseado na precisão
 	show_hit_effect(noteData.accuracy)
@@ -143,6 +148,7 @@ func onMiss():
 	self.playerLife -= 3
 	self.playerLife = clamp(self.playerLife, 0, 100)
 	$PlayerLife.value = self.playerLife
+	$Casmurro.play_miss()
 	# print("Le Miss:", self.playerLife);
 	pass
 

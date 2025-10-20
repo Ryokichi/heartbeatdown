@@ -114,8 +114,8 @@ offset_right = 305.0
 offset_bottom = 720.0
 
 [node name="PlayerLife" parent="." instance=ExtResource("8_8w75a")]
-offset_left = 1250.0
+offset_left = 1240.0
 offset_top = 600.0
-offset_right = 1525.0
+offset_right = 1515.0
 offset_bottom = 720.0
 scale = Vector2(-1, 1)

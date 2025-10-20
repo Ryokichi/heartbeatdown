@@ -1,58 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://cythev8v5wdii"]
+[gd_scene load_steps=6 format=3 uid="uid://cythev8v5wdii"]
 
-[ext_resource type="Texture2D" uid="uid://c06ep84rmxqbd" path="res://assets/image/Casmurro/right.png" id="5_of50v"]
-[ext_resource type="Texture2D" uid="uid://c6y4mtruiy76s" path="res://assets/image/Casmurro/down.png" id="6_yrwi7"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_mx375"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("6_yrwi7")
-}],
-"loop": true,
-"name": &"down",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("6_yrwi7")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("6_yrwi7")
-}],
-"loop": true,
-"name": &"left",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("6_yrwi7")
-}],
-"loop": true,
-"name": &"miss",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_of50v")
-}],
-"loop": true,
-"name": &"right",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("6_yrwi7")
-}],
-"loop": true,
-"name": &"up",
-"speed": 5.0
-}]
+[ext_resource type="Script" uid="uid://di5dqasqs4qet" path="res://scenes/Utils/casmurro.gd" id="7_agpee"]
 
 [sub_resource type="Animation" id="Animation_8yeoa"]
 length = 0.001
@@ -71,7 +19,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_211p2"]
 resource_name = "idle"
-length = 3.0
+length = 2.0
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -80,10 +28,10 @@ tracks/0/path = NodePath(".:scale")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.5, 2.96667),
-"transitions": PackedFloat32Array(1, 1, 0.450625),
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1, 1), Vector2(1, 1.1), Vector2(1, 1)]
+"values": [Vector2(1, 1), Vector2(1, 1.05)]
 }
 
 [sub_resource type="Animation" id="Animation_mdto7"]
@@ -96,10 +44,9 @@ _data = {
 &"left": SubResource("Animation_mdto7")
 }
 
-[node name="Casmurro" type="AnimatedSprite2D"]
-sprite_frames = SubResource("SpriteFrames_mx375")
-animation = &"down"
+[node name="Casmurro" type="Sprite2D"]
 offset = Vector2(0, -272)
+script = ExtResource("7_agpee")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
