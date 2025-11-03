@@ -12,6 +12,9 @@ var exploding = false
 func _ready() -> void:
 	self.texture = spriteA
 	pass
+	
+func get_exploding():
+	return self.exploding
 
 func hit():
 	#Faz animacao de acerto
@@ -23,9 +26,6 @@ func hit():
 	pass
 
 func miss():
-	# print("MISS")
-
-	# Criar tremor
 	var original_position = position
 	var tween = create_tween()
 	tween.set_loops(3)

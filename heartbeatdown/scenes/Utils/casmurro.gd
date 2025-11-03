@@ -1,5 +1,7 @@
 extends Sprite2D
 
+@export var idl: int
+
 var idleTexture: Texture2D
 var upTexture: Texture2D
 var downTexture: Texture2D

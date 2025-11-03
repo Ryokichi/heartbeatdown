@@ -21,6 +21,8 @@ config/windows_native_icon="res://assets/image/nota.ico"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/size/extend_to_title=true
+window/stretch/mode="viewport"
 
 [input]
 

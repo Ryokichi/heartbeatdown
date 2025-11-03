@@ -176,11 +176,11 @@ def get_music_data_using_play(mid):
     return music_data
 
 
-midiPath = 'midi_files/tori_no_uta.mid'
+midiPath = 'midi_files/TanzschlachtAusf.mid'
 mid = mido.MidiFile(midiPath)
 
 print(mid.length)
-save_as_string(mid, 'midFileConveted.txt')
+save_as_string(mid, 'TanzschlachtAusf.txt')
 
 
 # ---- Preparação ----

@@ -1,5 +1,6 @@
 extends Node2D
 @onready var nota = preload("res://scenes/Utils/MusicNote.tscn")
+@onready var hitParticles = preload("res://scenes/Utils/hitParticles.tscn")
 
 var audio = null
 var audioPlayer = AudioStreamPlayer.new()
@@ -17,13 +18,16 @@ var playerLife = 100
 
 var gameSpeed = 1
 
+var paused = false
+var pause_menu: Control
+
 var noteColors = [
-	Color8(140, 170, 220, 255),
-	Color8(130, 190, 140, 255),
-	Color8(190, 170, 80, 255),
-	Color8(230, 150, 80, 255),
-	Color8(235, 95, 105, 255),
-	Color8(20, 100, 210, 255)
+	Color('41CED4'),
+	Color('DA4B39'),
+	Color('A32FDF'),
+	Color('24CF75'),
+	Color('DC51AC'),
+	Color('D9CF5A')
 ]
 
 var inSequence = 0
@@ -53,8 +57,34 @@ func set_timeToWait(time):
 	# mais a (altura da tela / velocidade da nota)
 	self.timeToWait = time
 
+func _input(event):
+	if event.is_action_pressed("ui_cancel"):  # ESC
+		print("Pause chamado")
+		toggle_pause()
+
+func toggle_pause():
+	paused = !paused    
+	if paused:
+		pause_game()
+	else:
+		resume_game()
+		
+func pause_game():
+	get_tree().paused = true  # Pausa todo o jogo
+	if pause_menu:
+		pause_menu.visible = true
+	# Pausar áudio
+	audioPlayer.stream_paused = true
+
+func resume_game():
+	get_tree().paused = false  # Despausa
+	if pause_menu:
+		pause_menu.visible = false
+	# Despausar áudio
+	audioPlayer.stream_paused = false
+
 func _ready():
-	chartData = GameUtils.load_json_to_dict("res://assets/music_charts/music_02.json")
+	chartData = GameUtils.load_json_to_dict("res://assets/music_charts/music_01.json")
 	audio = preload("res://assets/audio/musica_01.ogg")
 	self.audioPlayer.stream = audio
 	self.audioPlayer.volume_db = -15
@@ -107,11 +137,6 @@ func _ready():
 func onHit(noteData):
 	print(noteData)
 	self.points += 1
-	# Usar os dados recebidos
-	#print("Hit! Accuracy: ", noteData.accuracy)
-	# print("Hit Box: ", noteData.hitBoxId)
-	# print("Note Position: ", noteData.position)
-	
 	# Dar pontos baseado na precisão
 	match noteData.accuracy:
 		"perfect":
@@ -127,11 +152,14 @@ func onHit(noteData):
 	$Casmurro.play_hit(noteData.hitBoxId)
 	
 	# Adicionar efeitos visuais baseado na precisão
-	show_hit_effect(noteData.accuracy)
+	show_hit_effect(noteData.accuracy, noteData.position, noteData.color)
 	pass
 
-func show_hit_effect(accuracy_type):
+func show_hit_effect(accuracy_type, pos, color):
 	# Implementar efeitos visuais baseado na precisão
+	var _particles = hitParticles.instantiate()
+	_particles.initiate(pos, color)
+	self.add_child(_particles)
 	match accuracy_type:
 		"perfect":
 			# Efeito dourado
