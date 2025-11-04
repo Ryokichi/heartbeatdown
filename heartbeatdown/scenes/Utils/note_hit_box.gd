@@ -54,7 +54,7 @@ func key_pressed():
 		note.hit()
 		var noteData = {
 			"noteType": "default",  # Simplificado por enquanto
-			"position": note.position,
+			"position": self.global_position,
 			"hitBoxId": assignedKey,
 			"color": self.originalColor,
 			"accuracy": calculate_accuracy(note),

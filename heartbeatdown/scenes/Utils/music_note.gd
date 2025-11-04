@@ -28,6 +28,7 @@ func hit():
 func miss():
 	var original_position = position
 	var tween = create_tween()
+	
 	tween.set_loops(3)
 	tween.tween_property(self, "position", original_position + Vector2(3, 0), 0.03)
 	tween.tween_property(self, "position", original_position + Vector2(-3, 0), 0.03)

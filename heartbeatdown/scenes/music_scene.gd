@@ -35,8 +35,8 @@ func spawn_note(index):
 	var _nota = nota.instantiate()
 	var qtd_notas = 6
 	var pos = index % qtd_notas
-	pos = self.inSequence % 4 + 1
-	self.inSequence += 1
+	#pos = self.inSequence % 6 
+	#self.inSequence += 1
 	_nota.position = Vector2(-174+(pos*70), -648)
 	_nota.self_modulate = self.noteColors[pos]
 	$Trilha.add_child(_nota)
@@ -130,7 +130,7 @@ func _ready():
 	$Trilha/NoteHitBox5.set_original_color(noteColors[4])
 	$Trilha/NoteHitBox6.set_original_color(noteColors[5])
 	
-	set_timeToWait(self.currNote['elapsed']+3.2+(1.2))
+	set_timeToWait(self.currNote['elapsed']+3.2+(0))
 	print("Ready")
 	pass
 
