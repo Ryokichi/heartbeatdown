@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjfmrwpkmeju1"
-path="res://.godot/imported/capitu_03.png-12ade0279caf33030be7fbc80baedf7a.ctex"
+uid="uid://b7avnd32dvh26"
+path="res://.godot/imported/estrela.png-59afc939c099227ccd0965908832b2f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/image/Capitu/capitu_03.png"
-dest_files=["res://.godot/imported/capitu_03.png-12ade0279caf33030be7fbc80baedf7a.ctex"]
+source_file="res://assets/image/UI/estrela.png"
+dest_files=["res://.godot/imported/estrela.png-59afc939c099227ccd0965908832b2f2.ctex"]
 
 [params]
 

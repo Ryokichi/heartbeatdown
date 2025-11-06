@@ -25,7 +25,8 @@ func _on_body_exited(body):
 	if (body.get_parent().get_exploding()):
 		return
 	body.get_parent().miss()
-	hit_miss.emit()
+	hit_miss.emit(self.assignedKey)
+	
 	pass
 	
 func set_key(keyValue):
@@ -55,7 +56,7 @@ func key_pressed():
 		var noteData = {
 			"noteType": "default",  # Simplificado por enquanto
 			"position": self.global_position,
-			"hitBoxId": assignedKey,
+			"hitBoxId": self.assignedKey,
 			"color": self.originalColor,
 			"accuracy": calculate_accuracy(note),
 			"timestamp": Time.get_time_dict_from_system(),
@@ -63,7 +64,7 @@ func key_pressed():
 
 		hit_success.emit(noteData)  # Emitir sinal com dados
 	else:
-		hit_miss.emit()  # Emitir sinal de erro
+		hit_miss.emit(self.assignedKey)  # Emitir sinal de erro
 	pass
 
 func key_released():

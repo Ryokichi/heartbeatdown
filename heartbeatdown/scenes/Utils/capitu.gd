@@ -12,12 +12,12 @@ var missTexture: Texture2D
 
 func _ready() -> void:
 	$AnimationPlayer.play('idle')
-	idleTexture = preload("res://assets/image/Casmurro/idle.png")
-	upTexture = preload("res://assets/image/Casmurro/up.png")
-	downTexture = preload("res://assets/image/Casmurro/down.png")
-	leftTexture = preload("res://assets/image/Casmurro/left.png")
-	rightTexture = preload("res://assets/image/Casmurro/right.png")
-	missTexture = preload("res://assets/image/Casmurro/miss.png")
+	idleTexture = preload("res://assets/image/Capitu/idle.png")
+	upTexture = preload("res://assets/image/Capitu/up.png")
+	downTexture = preload("res://assets/image/Capitu/down.png")
+	leftTexture = preload("res://assets/image/Capitu/left.png")
+	rightTexture = preload("res://assets/image/Capitu/right.png")
+	missTexture = preload("res://assets/image/Capitu/miss.png")
 	
 	self.texture = idleTexture
 	pass
@@ -35,7 +35,7 @@ func play_hit(id):
 	await get_tree().create_timer(2).timeout
 	self.texture = idleTexture
 
-func play_miss():
+func blevers():
 	self.texture = missTexture
 	await get_tree().create_timer(2).timeout
 	self.texture = idleTexture

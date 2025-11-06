@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cib1mnqjc788f"
-path="res://.godot/imported/capitu_01.png-f418755bba864782fb30583ac8c7b51f.ctex"
+uid="uid://bjfmrwpkmeju1"
+path="res://.godot/imported/up.png-6c07e55f353e92e89ba31de196449a1f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/image/Capitu/capitu_01.png"
-dest_files=["res://.godot/imported/capitu_01.png-f418755bba864782fb30583ac8c7b51f.ctex"]
+source_file="res://assets/image/Capitu/up.png"
+dest_files=["res://.godot/imported/up.png-6c07e55f353e92e89ba31de196449a1f.ctex"]
 
 [params]
 

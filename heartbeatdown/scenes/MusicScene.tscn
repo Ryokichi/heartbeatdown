@@ -8,8 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://c1wvg7xvoqld4" path="res://assets/image/UI/CenárioNévoa.png" id="4_lglyv"]
 [ext_resource type="PackedScene" uid="uid://flchr8ob1g0k" path="res://scenes/Utils/NoteHitBox.tscn" id="5_8w75a"]
 [ext_resource type="PackedScene" uid="uid://cythev8v5wdii" path="res://scenes/Utils/Casmurro.tscn" id="7_7ram6"]
-[ext_resource type="Texture2D" uid="uid://xe6wp228dwo5" path="res://assets/image/Capitu/capitu_02.png" id="7_lglyv"]
 [ext_resource type="PackedScene" uid="uid://c0llsbusf38pr" path="res://scenes/Utils/HudVida.tscn" id="8_8w75a"]
+[ext_resource type="PackedScene" uid="uid://d2dgtpu2atqtj" path="res://scenes/Utils/Capitu.tscn" id="8_lm7ek"]
 [ext_resource type="Texture2D" uid="uid://dwlxteu7h6v2y" path="res://assets/image/UI/BotaoPause.png" id="9_5h200"]
 [ext_resource type="Texture2D" uid="uid://bponre7031f5r" path="res://assets/image/UI/BotaoPauseHover.png" id="9_q32yi"]
 [ext_resource type="Texture2D" uid="uid://brox465ubtm1s" path="res://assets/image/UI/BotaoPausePressed.png" id="12_lm7ek"]
@@ -27,7 +27,7 @@ texture = ExtResource("3_lm7ek")
 
 [node name="Nuvem1" type="Sprite2D" parent="Background"]
 z_index = -1
-position = Vector2(440, -365)
+position = Vector2(-301, -496)
 texture = ExtResource("4_lglyv")
 
 [node name="Trilha" type="Node2D" parent="."]
@@ -108,12 +108,11 @@ visible = false
 position = Vector2(642, 363)
 scale = Vector2(1.20084, 1.1576)
 
-[node name="Capitu02" type="Sprite2D" parent="."]
-position = Vector2(189, 360)
-texture = ExtResource("7_lglyv")
+[node name="Capitu" parent="." instance=ExtResource("8_lm7ek")]
+position = Vector2(200, 610)
 
 [node name="Casmurro" parent="." instance=ExtResource("7_7ram6")]
-position = Vector2(1083, 637)
+position = Vector2(1083, 610)
 
 [node name="Info" type="RichTextLabel" parent="."]
 offset_left = 938.0

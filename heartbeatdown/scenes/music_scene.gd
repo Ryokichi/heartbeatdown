@@ -135,7 +135,6 @@ func _ready():
 	pass
 
 func onHit(noteData):
-	print(noteData)
 	self.points += 1
 	# Dar pontos baseado na precisão
 	match noteData.accuracy:
@@ -172,12 +171,12 @@ func show_hit_effect(accuracy_type, pos, color):
 			pass
 	pass
 
-func onMiss():
+func onMiss(hitBoxId):
+	$Casmurro.play_miss()
+	$Capitu.play_hit(hitBoxId)
 	self.playerLife -= 3
 	self.playerLife = clamp(self.playerLife, 0, 100)
 	$PlayerLife.value = self.playerLife
-	$Casmurro.play_miss()
-	# print("Le Miss:", self.playerLife);
 	pass
 
 func _process(delta: float) -> void:
@@ -189,9 +188,6 @@ func _process(delta: float) -> void:
 		self.playerNotes
 	]
 
-	if (self.musicIsOver):
-		return
-
 	if Input.is_action_just_pressed("speed_down"):
 		change_speed(-0.1)
 	elif Input.is_action_just_pressed("speed_up"):
@@ -201,14 +197,18 @@ func _process(delta: float) -> void:
 	if (self.notesSequence.is_empty()):
 		self.musicIsOver = true
 
+	if (self.musicIsOver):
+		return
+
 	self.timeElapsed += delta
 	if (timeElapsed >= self.timeToWait):
 		self.audioPlayer.play()
 		self.timeToWait = INF
 
 	while self.timeElapsed >= self.currNote['elapsed']:
-	#if timeElapsed >= self.currNote['elapsed']:
 		if (self.currNote["velocity"] > 0 ):
 			spawn_note(int(self.currNote["note"]))
 		self.currNote = getNextNote()
+		if not self.currNote.has('elapsed'):
+			break
 	pass

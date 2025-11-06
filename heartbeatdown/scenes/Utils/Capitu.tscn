@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://cythev8v5wdii"]
+[gd_scene load_steps=7 format=3 uid="uid://d2dgtpu2atqtj"]
 
-[ext_resource type="Texture2D" uid="uid://sqoer2vyynl0" path="res://assets/image/Casmurro/idle.png" id="1_x42yu"]
-[ext_resource type="Script" uid="uid://di5dqasqs4qet" path="res://scenes/Utils/casmurro.gd" id="7_agpee"]
+[ext_resource type="Script" uid="uid://dprgjrriyo2sc" path="res://scenes/Utils/capitu.gd" id="1_eybec"]
+[ext_resource type="Texture2D" uid="uid://cib1mnqjc788f" path="res://assets/image/Capitu/idle.png" id="1_iljlo"]
 
 [sub_resource type="Animation" id="Animation_8yeoa"]
 length = 0.001
@@ -45,10 +45,10 @@ _data = {
 &"left": SubResource("Animation_mdto7")
 }
 
-[node name="Casmurro" type="Sprite2D"]
-texture = ExtResource("1_x42yu")
+[node name="Capitu" type="Sprite2D"]
+texture = ExtResource("1_iljlo")
 offset = Vector2(0, -272)
-script = ExtResource("7_agpee")
+script = ExtResource("1_eybec")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
