@@ -1,11 +1,13 @@
 extends Node2D
 @onready var nota = preload("res://scenes/Utils/MusicNote.tscn")
 @onready var hitParticles = preload("res://scenes/Utils/hitParticles.tscn")
+@onready var hitText = preload("res://scenes/Utils/HitText.tscn")
 
 var audio = null
 var audioPlayer = AudioStreamPlayer.new()
 var chartData = [];
 var currNote = null
+var gameSpeed = 1
 var musicIsOver = false
 var notesSequence = null
 var timeElapsed = 0
@@ -15,8 +17,6 @@ var bossNotes = 0
 var points = 0
 var totalNotes = 0
 var playerLife = 100
-
-var gameSpeed = 1
 
 var paused = false
 var pause_menu: Control
@@ -83,57 +83,6 @@ func resume_game():
 	# Despausar áudio
 	audioPlayer.stream_paused = false
 
-func _ready():
-	chartData = GameUtils.load_json_to_dict("res://assets/music_charts/music_01.json")
-	audio = preload("res://assets/audio/musica_01.ogg")
-	self.audioPlayer.stream = audio
-	self.audioPlayer.volume_db = -15
-	add_child(self.audioPlayer)
-	
-	self.notesSequence = chartData["notes"]["0"]
-	self.playerNotes = GameUtils.countNotes(chartData["notes"]["0"])
-	#self.bossNotes = GameUtils.countNotes(chartData,1)
-	self.currNote = getNextNote()
-	
-	$PlayerLife.set_inveted_mode(true)
-	$PlayerLife.set_label("D. Casmurro")
-	$BossLife.set_label("Capitu")
-	
-	$Trilha/NoteHitBox1.set_key("hit_box_1")
-	$Trilha/NoteHitBox2.set_key("hit_box_2")
-	$Trilha/NoteHitBox3.set_key("hit_box_3")
-	$Trilha/NoteHitBox4.set_key("hit_box_4")
-	$Trilha/NoteHitBox5.set_key("hit_box_5")
-	$Trilha/NoteHitBox6.set_key("hit_box_6")
-	
-	# Conectar sinais de hit
-	$Trilha/NoteHitBox1.hit_success.connect(onHit)
-	$Trilha/NoteHitBox2.hit_success.connect(onHit)
-	$Trilha/NoteHitBox3.hit_success.connect(onHit)
-	$Trilha/NoteHitBox4.hit_success.connect(onHit)
-	$Trilha/NoteHitBox5.hit_success.connect(onHit)
-	$Trilha/NoteHitBox6.hit_success.connect(onHit)
-	
-	# Conectar sinais de miss
-	$Trilha/NoteHitBox1.hit_miss.connect(onMiss)
-	$Trilha/NoteHitBox2.hit_miss.connect(onMiss)
-	$Trilha/NoteHitBox3.hit_miss.connect(onMiss)
-	$Trilha/NoteHitBox4.hit_miss.connect(onMiss)
-	$Trilha/NoteHitBox5.hit_miss.connect(onMiss)
-	$Trilha/NoteHitBox6.hit_miss.connect(onMiss)
-	
-	# Definir cores originais dos hit boxes
-	$Trilha/NoteHitBox1.set_original_color(noteColors[0])
-	$Trilha/NoteHitBox2.set_original_color(noteColors[1])
-	$Trilha/NoteHitBox3.set_original_color(noteColors[2])
-	$Trilha/NoteHitBox4.set_original_color(noteColors[3])
-	$Trilha/NoteHitBox5.set_original_color(noteColors[4])
-	$Trilha/NoteHitBox6.set_original_color(noteColors[5])
-	
-	set_timeToWait(self.currNote['elapsed']+3.2+(0))
-	print("Ready")
-	pass
-
 func onHit(noteData):
 	self.points += 1
 	# Dar pontos baseado na precisão
@@ -159,16 +108,7 @@ func show_hit_effect(accuracy_type, pos, color):
 	var _particles = hitParticles.instantiate()
 	_particles.initiate(pos, color)
 	self.add_child(_particles)
-	match accuracy_type:
-		"perfect":
-			# Efeito dourado
-			pass
-		"good":
-			# Efeito verde
-			pass
-		"ok":
-			# Efeito amarelo
-			pass
+	self.show_hit_text(accuracy_type, false)
 	pass
 
 func onMiss(hitBoxId):
@@ -177,7 +117,30 @@ func onMiss(hitBoxId):
 	self.playerLife -= 3
 	self.playerLife = clamp(self.playerLife, 0, 100)
 	$PlayerLife.value = self.playerLife
+	self.show_hit_text("miss", true)
 	pass
+
+func show_hit_text(accuracy_type, miss):
+	var _hitText = hitText.instantiate()
+	var text = ''
+	var hitColor = Color(1,1)
+	match accuracy_type:
+		"perfect":
+			text = "Perfeito!"
+			pass
+		"good":
+			text = "Bom"
+			pass
+		"ok":
+			text = "Regular"
+			pass
+		"miss":
+			text = "Ruim"
+	pass
+	if (true):
+		_hitText.global_position = get_viewport_rect().size / 2
+		_hitText.setValues(text, hitColor, miss)
+		self.add_child(_hitText)
 
 func _process(delta: float) -> void:
 	$Info.text = """Vel: %.1f | Tempo: %.2f
@@ -211,4 +174,56 @@ func _process(delta: float) -> void:
 		self.currNote = getNextNote()
 		if not self.currNote.has('elapsed'):
 			break
+	pass
+
+func _ready():
+	chartData = GameUtils.load_json_to_dict("res://assets/music_charts/music_01.json")
+	audio = preload("res://assets/audio/musica_01.ogg")
+	self.audioPlayer.stream = audio
+	self.audioPlayer.volume_db = -15
+	add_child(self.audioPlayer)
+	
+	self.notesSequence = chartData["notes"]["0"]
+	self.playerNotes = GameUtils.countNotes(chartData["notes"]["0"])
+	self.currNote = getNextNote()
+	#self.bossNotes = GameUtils.countNotes(chartData,1)
+	
+	$PlayerLife.set_inveted_mode(true)
+	$PlayerLife.set_label("D. Casmurro")
+	$BossLife.set_label("Capitu")
+	
+	
+	
+	$Trilha/NoteHitBox1.set_key("hit_box_1")
+	$Trilha/NoteHitBox2.set_key("hit_box_2")
+	$Trilha/NoteHitBox3.set_key("hit_box_3")
+	$Trilha/NoteHitBox4.set_key("hit_box_4")
+	$Trilha/NoteHitBox5.set_key("hit_box_5")
+	$Trilha/NoteHitBox6.set_key("hit_box_6")
+	
+	# Conectar sinais de hit
+	$Trilha/NoteHitBox1.hit_success.connect(onHit)
+	$Trilha/NoteHitBox2.hit_success.connect(onHit)
+	$Trilha/NoteHitBox3.hit_success.connect(onHit)
+	$Trilha/NoteHitBox4.hit_success.connect(onHit)
+	$Trilha/NoteHitBox5.hit_success.connect(onHit)
+	$Trilha/NoteHitBox6.hit_success.connect(onHit)
+	
+	# Conectar sinais de miss
+	$Trilha/NoteHitBox1.hit_miss.connect(onMiss)
+	$Trilha/NoteHitBox2.hit_miss.connect(onMiss)
+	$Trilha/NoteHitBox3.hit_miss.connect(onMiss)
+	$Trilha/NoteHitBox4.hit_miss.connect(onMiss)
+	$Trilha/NoteHitBox5.hit_miss.connect(onMiss)
+	$Trilha/NoteHitBox6.hit_miss.connect(onMiss)
+	
+	# Definir cores originais dos hit boxes
+	$Trilha/NoteHitBox1.set_original_color(noteColors[0])
+	$Trilha/NoteHitBox2.set_original_color(noteColors[1])
+	$Trilha/NoteHitBox3.set_original_color(noteColors[2])
+	$Trilha/NoteHitBox4.set_original_color(noteColors[3])
+	$Trilha/NoteHitBox5.set_original_color(noteColors[4])
+	$Trilha/NoteHitBox6.set_original_color(noteColors[5])
+	
+	set_timeToWait(self.currNote['elapsed']+3.2+(0))
 	pass

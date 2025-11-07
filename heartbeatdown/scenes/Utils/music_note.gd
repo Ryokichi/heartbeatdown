@@ -4,6 +4,7 @@ extends Sprite2D
 @export var lifetime: float = 6.0 # segundos de vida
 @export var scale_speed: float = 0.4
 @export var fade_speed: float = 1.5
+@export var die_immediately: bool
 
 var spriteA = preload("res://assets/image/UI/coracaoFechado.png")
 var spriteB = preload("res://assets/image/UI/coracaoAberto.png")
@@ -17,6 +18,9 @@ func get_exploding():
 	return self.exploding
 
 func hit():
+	if (die_immediately):
+		queue_free()
+		return
 	#Faz animacao de acerto
 	self.speed = 0
 	self.texture = spriteB
