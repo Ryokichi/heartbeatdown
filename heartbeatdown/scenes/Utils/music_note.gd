@@ -18,15 +18,16 @@ func get_exploding():
 	return self.exploding
 
 func hit():
-	if (die_immediately):
-		queue_free()
-		return
+	# print("Acertou!")
 	#Faz animacao de acerto
 	self.speed = 0
 	self.texture = spriteB
 	self.lifetime = 0.3
 	self.exploding = true
-	# print("Acertou!")
+
+	if (die_immediately):
+		queue_free()
+		return
 	pass
 
 func miss():

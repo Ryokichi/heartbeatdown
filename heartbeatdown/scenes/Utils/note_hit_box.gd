@@ -1,6 +1,8 @@
 extends Area2D
 
 @export var assignedKey: String
+@export var ignore_miss_click: bool
+
 var notesIn: Array = []
 var originalColor: Color
 var originalScale = Vector2(0.6, 0.6)
@@ -64,7 +66,8 @@ func key_pressed():
 
 		hit_success.emit(noteData)  # Emitir sinal com dados
 	else:
-		hit_miss.emit(self.assignedKey)  # Emitir sinal de erro
+		if (not self.ignore_miss_click):
+			hit_miss.emit(self.assignedKey)  # Emitir sinal de erro
 	pass
 
 func key_released():

@@ -9,6 +9,7 @@ size = Vector2(31, 37)
 
 [node name="NoteHitBox" type="Area2D"]
 script = ExtResource("1_og0eq")
+ignore_miss_click = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)

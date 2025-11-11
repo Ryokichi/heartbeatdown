@@ -137,10 +137,9 @@ func show_hit_text(accuracy_type, miss):
 		"miss":
 			text = "Ruim"
 	pass
-	if (true):
-		_hitText.global_position = get_viewport_rect().size / 2
-		_hitText.setValues(text, hitColor, miss)
-		self.add_child(_hitText)
+	_hitText.global_position = Vector2(1080, get_viewport_rect().size.y / 2)
+	_hitText.setValues(text, hitColor, miss)
+	self.add_child(_hitText)
 
 func _process(delta: float) -> void:
 	$Info.text = """Vel: %.1f | Tempo: %.2f
