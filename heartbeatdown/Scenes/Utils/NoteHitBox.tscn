@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://flchr8ob1g0k"]
+
+[ext_resource type="Script" uid="uid://cxewbll3vyvxx" path="res://Scenes/Utils/note_hit_box.gd" id="1_og0eq"]
+[ext_resource type="Texture2D" uid="uid://db2giahrpqbaj" path="res://assets/image/UI/coracaoFechadoOutline.png" id="2_pjb88"]
+[ext_resource type="Texture2D" uid="uid://07p3hawl4kh5" path="res://assets/image/UI/coracaoFechado.png" id="2_tmxrm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tmxrm"]
+size = Vector2(31, 37)
+
+[node name="NoteHitBox" type="Area2D"]
+script = ExtResource("1_og0eq")
+ignore_miss_click = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5)
+shape = SubResource("RectangleShape2D_tmxrm")
+
+[node name="Coracao" type="Sprite2D" parent="."]
+position = Vector2(0, 1)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_tmxrm")
+
+[node name="Outline" type="Sprite2D" parent="Coracao"]
+texture = ExtResource("2_pjb88")

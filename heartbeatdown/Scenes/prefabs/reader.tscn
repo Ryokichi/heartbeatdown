@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0yf4boniw2ir"]
+
+[sub_resource type="Resource" id="Resource_x5hv5"]
+metadata/__load_path__ = "res://scripts/reader.gd"
+
+[node name="Reader" type="Node"]
+script = SubResource("Resource_x5hv5")

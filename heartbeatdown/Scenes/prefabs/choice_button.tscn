@@ -1,0 +1,34 @@
+[gd_scene load_steps=8 format=3 uid="uid://b4lqecco7nox8"]
+
+[ext_resource type="FontFile" uid="uid://43gnwunr8hr4" path="res://Styles/Hoefler Text Regular.ttf" id="1_xk6q4"]
+[ext_resource type="Texture2D" uid="uid://c4smrle64rafy" path="res://Img/VN/MENUoutlineBotões.png" id="2_a4tdb"]
+[ext_resource type="Texture2D" uid="uid://b6hols67gsn5f" path="res://Img/VN/MENUbaseBotões.png" id="3_nlefc"]
+[ext_resource type="Script" uid="uid://b0xet22ds1aso" path="res://Scripts/Code/choice_button.gd" id="4_dwogs"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aymhl"]
+texture = ExtResource("2_a4tdb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6ov0q"]
+texture = ExtResource("2_a4tdb")
+modulate_color = Color(0.518503, 0.518503, 0.518503, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hc5f3"]
+texture = ExtResource("3_nlefc")
+
+[node name="ChoiceButton" type="Button"]
+anchors_preset = -1
+anchor_right = 0.137
+anchor_bottom = 0.1
+offset_right = 0.640015
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_xk6q4")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover = SubResource("StyleBoxTexture_aymhl")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_6ov0q")
+theme_override_styles/normal = SubResource("StyleBoxTexture_hc5f3")
+text = "texto?"
+script = ExtResource("4_dwogs")
+
+[connection signal="button_up" from="." to="." method="_on_button_up"]

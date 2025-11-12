@@ -1,0 +1,49 @@
+,pt_BR,en_US
+B_PLAY,Jogar,Play
+B_CONFIG,Opções,Options
+B_TUTO,Instruções,Instructions
+B_CRED,Créditos,Credits
+B_BACK,Voltar,Back
+M_VOL,Volume da música,Music volume
+SFX_VOL,Volume dos efeitos,Sound effects volume
+TXT_TUTO,"Agradecemos por jogar nosso jogo!
+Seguem as instruções para jogá-lo corretamente:
+
+Durante as etapas de diálogo, aperte o botão esquerdo do mouse ou a tecla de espaço em seu teclado para avançar mais rapidamente e passar os diálogos.
+Selecione opções de diálogo com seu mouse, clicando com o botão esquerdo.
+
+Durante as etapas de ritmo, aperte as teclas S, D, F, J, K e L, todas correspondendo à ordem dos corações na tela, para marcar pontos e passar pela música.","Thank you for playing our game!
+These are the instructions to play it correctly:
+
+During the dialogue phase, press left mouse or space in your keyboard to advance quickly and skip the dialogues.
+Select dialogue options with left mouse.
+
+During the rhythm phase, press the S, D, F, J, K and L keys in your keyboard, according with the hearts in the screen, to earn points and get through the music."
+TXT_CRED,"Este jogo é parte do Trabalho de Graduação do curso de Jogos Digitais da Fatec São Caetano do Sul, e todos os créditos vão para:
+Heitor Ryokichi Nakamura – Programador Central
+Pedro Hiroshi Godeny Takamura – Músico e Programador Secundário
+Pietro Stricagnolo Pexoto – Designer e Programador Secundário
+Rafaela Zanata de Lemos – Artista Digital e Animadora
+Claudemir Martins da Silva – Orientador
+Willians Monteiro da Silva – Orientador
+Certos sons foram retirados do site Pixabay. Link: https://pixabay.com/pt/","This game is part of the Graduation Project for the Digital Games program at Fatec São Caetano do Sul, and all credits go to:
+Heitor Ryokichi Nakamura – Lead Programmer
+Pedro Hiroshi Godeny Takamura – Composer and Secondary Programmer
+Pietro Stricagnolo Pexoto – Designer and Secondary Programmer
+Rafaela Zanata de Lemos – Digital Artist and Animator
+Claudemir Martins da Silva – Advisor
+Willians Monteiro da Silva – Advisor
+Certain sounds were taken from Pixabay website. Link: https://pixabay.com/pt/"
+TXT_CONFIRM,Deseja Sair?,Are you sure want exit?
+B_YES,Sim,Yes
+B_NO,Não,No
+B_SOBRE,Sobre,About
+TXT_SOBRE,"HeartBeatdown é um jogo que alterna entre os gêneros Visual Novel e Jogo de Ritmo.
+O jogador acompanha a jornada do protagonista sem nome em busca de melhorar sua saúde mental através de consultas médicas um tanto quanto suspeitas.
+Através hipnose e batalhas de dança mentais, o protagonista entra em uma aventura mental, buscando uma mentalidade mais saudável.
+
+Foi inspirado por Friday Night Funkin’, Guitar Hero e Persona.","HeartBeatdown is a game that alternates between the visual novel and rhythm genres.
+Players follow the journey of a nameless protagonist who seeks to improve their mental health through a series of rather suspicious therapy sessions.
+Through hypnosis and mental dance battles, the protagonist embarks on a psychological adventure in pursuit of a healthier mindset.
+
+The game was inspired by Friday Night Funkin’, Guitar Hero and Persona."

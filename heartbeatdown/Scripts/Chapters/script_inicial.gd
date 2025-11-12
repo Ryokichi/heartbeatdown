@@ -1,0 +1,71 @@
+extends Node
+
+@export var novel_script: Array[String] = []
+
+func _ready():
+	var lang = TranslationServer.get_locale()
+	if lang == "pt_BR":
+		novel_script = [
+		"/bgimg bgconsultorio",
+		"/music ambConsultorio",
+		"/think",
+		"Você está sentado em um sofá confortável, na clínica psicológica que você começou a fazer suas consultas. As revistas já não te interessam há uns minutos, e a porta continua fechada.",
+		"Os sons dos cliques do relógio preenchem a sala, reverberando suavemente.",
+		"Click - A porta se abre ao seu lado, e um homem sai. De dentro da sala ao lado você escuta a voz de quem esperava pacientemente para consultar.",
+		"/talk Doutor",
+		"Próximo, por favor!",
+		"/think",
+		"Entrando na sala, você subitamente se sente mais calmo. Todavia, o nervosismo rapidamente volta a percorrer suas veias.",
+		"/talk Doutor",
+		"Venha, feche a porta, pode se sentar na cadeira, sinta-se à vontade!",
+		"/think",
+		"Após fechar a porta atrás de você, você se senta na cadeira em frente à mesa dele.",
+		"Ele explica todos os detalhes legais das consultas, dizendo que a saúde mental é um direito que todos os humanos deviam saber que têm. Depois, pergunta sobre seu motivo para buscar auxílio psicológico.",
+		"Você, então, diz sobre seus vários problemas com seus ex-parceiros românticos, e como isso te afeta muito ainda nos dias de hoje.",
+		"/talk Doutor",
+		"... Entendo... Bom, deite-se, por favor!",
+		"/think",
+		"Ele se levanta de sua cadeira, com uma das mãos sutilmente levantada, apontando para uma cadeira reclinada, enquanto a outra descansa sobre a mesa.",
+		"Você se deita na cadeira, que se faz confortável o suficiente para causar surpresa, suavemente se adaptando ao formato do seu corpo. Logo, você se sente como se estivesse deitado em uma nuvem.",
+		"Com apenas o teto branco e indistinto para olhar, você se sente instintivamente fechando os olhos e relaxando.",
+		"Enquanto isso, o doutor se senta em uma cadeira ao seu lado, levando uma prancheta e uma caneta.",
+		"/talk Doutor",
+		"Podemos tentar o método da hipnose. Afinal, não tem forma melhor de se resolver com alguém, que se não com ela mesma, não é?",
+		"/think",
+		"O doutor se aproxima, sacando de seu bolso um relógio de bolso clássico e elegante.",
+		"/talk Doutor",
+		"Peço que preste muita atenção ao badalar deste relógio, e em como seus ponteiros se mexem...",
+		"/think",
+		"Ele começa a balançar seu relógio de um lado para o outro. Quanto mais você olha, mais difícil fica de desviar o olhar do relógio, e, aos poucos, sua mente começa a apagar...",
+		"/bgimg bgjardim",
+		"/music ambClassic",
+		"/chimg furiosa",
+		"/talk Capitu",
+		"VOCÊ SEMPRE AGE ASSIM!",
+		"Todas as ações, por menores que sejam, são alvo de tuas queixas incessantes, é enfurecedor!",
+		"/chimg furiosa",
+		"/talk D. Casmurro",
+		"Então explique-me os olhares que trocavas com Escobar tão frequentemente!",
+		"/talk Capitu",
+		"Ele é seu amigo, assim como meu também! Não há malícia em nossos olhares! Diferente de você, ou pensas que não o notei olhando sofregamente para as cortesãs?",
+		"/chimg furiosa",
+		"/talk D. Casmurro",
+		"Que absurdo! Estás me culpando de ultrajes praticados por ti!? Suas asneiras não encontram limites!?",
+		"/talk Capitu",
+		"Asneiras!? Asneiras é o que me dizes toda vez que me puxas à sacada para me incomodar!",
+		"/chimg brava",
+		"/talk Capitu",
+		"Agora, se não houver mais reclamações, permita-me retornar à festa.",
+		"O baile não tardará, e prefiro não ouvir teu sermão quando posso dançar.",
+		"/chimg animate leave brava",
+		"/sound passos",
+		"/talk D. Casmurro",
+		"...",
+		"/music decisao",
+		"Preciso fazer algo sobre isso.",
+	]
+	elif lang == "en_US":
+		novel_script = [
+		"/think",
+		"if shovel it worked"
+		]

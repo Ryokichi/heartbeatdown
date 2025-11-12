@@ -1,0 +1,72 @@
+extends Node
+
+@export var novel_script: Array[String] = []
+
+func _ready():
+	var lang = TranslationServer.get_locale()
+	if lang == "pt_BR":
+		novel_script = [
+		"/bgimg bgjardim",
+		"/music ambClassic",
+		"/talk D. Casmurro",
+		"...Preciso de um cigarro.",
+		"/talk Voz Distante",
+		"Senhoras e senhores, agradeço sua participação nesta noite!",
+		"/talk D. Casmurro",
+		"Ah! O início da dança! Sequer pude acender meu cigarro!",
+		"/talk Voz Distante",
+		"A música iniciará em alguns instantes!!",
+		"/music ambDança",
+		"/talk D. Casmurro",
+		"Devo me apressar!",
+		"/bgimg bgteste",
+		"/sound passos",
+		"/talk D. Casmurro",
+		"...C-C-",
+		"CAPITU!?",
+		"/chimg animate surpresa",
+		"/talk Capitu",
+		"Amor!?",
+		"/chimg surpresa",
+		"/talk D. Casmurro",
+		"Capitu! O que fazes com seus braços em volta de outro homem!?",
+		"/chimg sorrindo",
+		"/talk Capitu",
+		"Que mulher poderia, sequer, interessar-se em dançar com um homem como você!?",
+		"Sempre com suas incessantes queixas, acabando com meu sossego!",
+		"/chimg sorrindo",
+		"/talk D. Casmurro",
+		"Então que seja! Tenha seu sossego, sem mim ao teu lado!",
+		"/chimg aflita",
+		"/talk Capitu",
+		"NÃO!!",
+		"/chimg animate leave aflita",
+		"/bgimg bgjardim",
+		"/sound passos",
+		"/talk D. Casmurro",
+		"...",
+		"/chimg animate aflita",
+		"/sound passos",
+		"/talk Capitu",
+		"E-Espere! Você não pode me deixar! V-você precisa de mim…!",
+		"A-achas que outra mulher te amaria como eu te amo!?",
+		"/chimg aflita",
+		"/talk D. Casmurro",
+		"Se o que fazes é me amar, então prefiro ser odiado.",
+		"/talk Capitu",
+		"Achas que pode se livrar de mim assim?",
+		"/chimg brava",
+		"/talk Capitu",
+		"Não podes fugir de tudo que te aflige!",
+		"/chimg brava",
+		"/talk D. Casmurro",
+		"O que sugere que façamos então?",
+		"/talk Capitu",
+		"/chimg furiosa",
+		"Pois dancemos… Pelos nossos corações!!!",
+		]
+	elif lang == "en_US":
+		novel_script = [
+		"/think",
+		"if shovel it worked"
+		]

@@ -1,0 +1,392 @@
+[gd_scene load_steps=28 format=3 uid="uid://ce24r3rb40mre"]
+
+[ext_resource type="Script" path="res://scripts/reader.gd" id="1_ifbfq"]
+[ext_resource type="Texture2D" uid="uid://c7p5redktk6jv" path="res://Img/VN/Sprites/VNCapitu1Sorrindo.png" id="2_mv86g"]
+[ext_resource type="Texture2D" uid="uid://b2r131006m2kg" path="res://Img/VN/Sprites/VNBocaAberta2.png" id="3_52ubv"]
+[ext_resource type="Texture2D" uid="uid://qsxvjucmr5b6" path="res://Img/VN/Sprites/VNCapituPiscandoAflita.png" id="3_lcpd6"]
+[ext_resource type="Script" path="res://scripts/Chapters/script_test.gd" id="4_b62gf"]
+[ext_resource type="Texture2D" uid="uid://duvxtw0sni2l8" path="res://Img/VN/Sprites/VNCapitu1Aflita.png" id="4_nhjnj"]
+[ext_resource type="Texture2D" uid="uid://o56uctsswkwr" path="res://Img/VN/Sprites/VNBocaO.png" id="4_petpi"]
+[ext_resource type="PackedScene" uid="uid://b0yf4boniw2ir" path="res://Scenes/prefabs/reader.tscn" id="4_qyor4"]
+[ext_resource type="Texture2D" uid="uid://b4j4875wweu5g" path="res://Img/VN/Sprites/VNCapituPiscandoBrava.png" id="5_af2v4"]
+[ext_resource type="AudioStream" uid="uid://eiryfx50gwpk" path="res://Sound/ui-button-click-5-327756.mp3" id="5_obnxm"]
+[ext_resource type="Texture2D" uid="uid://b8175w2jtmexw" path="res://Img/VN/Sprites/VNBocaFechando.png" id="5_xgcxa"]
+[ext_resource type="Texture2D" uid="uid://dnx7q66fnwqku" path="res://Img/VN/Sprites/VNCapitu1Brava.png" id="6_jhsk1"]
+[ext_resource type="Texture2D" uid="uid://gdawm0crdpfj" path="res://Img/VN/Sprites/VNBocaAberta1.png" id="6_pe8v6"]
+[ext_resource type="Script" path="res://Scripts/Chapters/escolha_seguir.gd" id="7_hmpfh"]
+[ext_resource type="Texture2D" uid="uid://cv2op1httfw30" path="res://Img/VN/Sprites/VNCapituPiscandoFuriosa.png" id="11_gqbgc"]
+[ext_resource type="Texture2D" uid="uid://ctn2s7er85kl4" path="res://Img/VN/Sprites/VNCapitu1Furiosa.png" id="12_uq5es"]
+[ext_resource type="Texture2D" uid="uid://dhc21rafhp1av" path="res://Img/VN/Sprites/VNCapituPiscandoSorrindo.png" id="13_vkva6"]
+[ext_resource type="Texture2D" uid="uid://jy5gsnibvaws" path="res://Img/VN/Sprites/VNCapituPiscandoSurpresa.png" id="14_0b1yj"]
+[ext_resource type="Texture2D" uid="uid://b1yhmwvbxy0df" path="res://Img/VN/Sprites/VNCapitu1Surpresa.png" id="15_ogmei"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_en052"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_worte"]
+
+[sub_resource type="Animation" id="Animation_3jyj8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(752, 64)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_88r44"]
+resource_name = "enter"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1217, 328), Vector2(752, 64)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_hdx47"]
+resource_name = "leave"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(752, 64), Vector2(1217, 328)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_jbhn5"]
+resource_name = "switch"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(752, 64), Vector2(1217, 328), Vector2(752, 64)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../..")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.2),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_switch_animation_call"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uoqjw"]
+_data = {
+"RESET": SubResource("Animation_3jyj8"),
+"enter": SubResource("Animation_88r44"),
+"leave": SubResource("Animation_hdx47"),
+"switch": SubResource("Animation_jbhn5")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_og5yo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_lcpd6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_nhjnj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_nhjnj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_nhjnj")
+}],
+"loop": true,
+"name": &"Aflita Piscando",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_af2v4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_jhsk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_jhsk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_jhsk1")
+}],
+"loop": true,
+"name": &"Brava Piscando",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_52ubv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_petpi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xgcxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pe8v6")
+}],
+"loop": true,
+"name": &"Falando",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_gqbgc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_uq5es")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_uq5es")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_uq5es")
+}],
+"loop": true,
+"name": &"Furiosa Piscando",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_vkva6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mv86g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mv86g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mv86g")
+}],
+"loop": true,
+"name": &"Sorrindo Piscando",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_0b1yj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ogmei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ogmei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ogmei")
+}],
+"loop": true,
+"name": &"Surpresa Piscando",
+"speed": 4.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Reader" type="Node" node_paths=PackedStringArray("text_label", "name_label", "character_image", "character_animator", "next_node")]
+script = ExtResource("1_ifbfq")
+text_label = NodePath("CanvasLayer/Control/LabelTexto")
+name_label = NodePath("CanvasLayer/Control/LabelNome")
+read_script_from_file = true
+character_image = NodePath("CanvasLayer/Control/Sprite")
+character_images = {
+"null": null,
+"test1": SubResource("CompressedTexture2D_en052"),
+"test2": SubResource("CompressedTexture2D_worte")
+}
+character_animator = NodePath("CanvasLayer/Control/Sprite/AnimationSprite")
+next_node = NodePath("Reader2")
+start_at_runtime = true
+quit_with_quote = true
+skip_novel_script = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="TextureRect" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite" type="TextureRect" parent="CanvasLayer/Control"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.587
+anchor_top = 0.089
+anchor_right = 1.0
+anchor_bottom = 0.822
+offset_left = 0.640015
+offset_top = -0.0800018
+offset_right = 3.0
+offset_bottom = 0.159973
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("2_mv86g")
+flip_h = true
+
+[node name="AnimationSprite" type="AnimationPlayer" parent="CanvasLayer/Control/Sprite"]
+libraries = {
+"": SubResource("AnimationLibrary_uoqjw")
+}
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/Control/Sprite"]
+position = Vector2(264, 264)
+scale = Vector2(0.99435, 1)
+sprite_frames = SubResource("SpriteFrames_og5yo")
+animation = &"Falando"
+frame_progress = 0.684932
+flip_h = true
+
+[node name="LabelTexto" type="RichTextLabel" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 0.736111
+anchor_bottom = 1.0
+offset_top = -98.0
+grow_horizontal = 2
+grow_vertical = 0
+bbcode_enabled = true
+text = "wflejrlkjrlgehtgowheptoghpqoeurypoqhwpfqpworygoirepoguerpuyqoreiupqrwpuhrwprpqwodkjfpqoiwdçfhqpweoh"
+metadata/_edit_use_anchors_ = true
+
+[node name="LabelNome" type="RichTextLabel" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.851852
+anchor_right = 1.0
+anchor_bottom = 0.851852
+offset_top = -98.0
+grow_horizontal = 2
+grow_vertical = 0
+bbcode_enabled = true
+metadata/_edit_use_anchors_ = true
+
+[node name="ContainerEscolhas" type="VBoxContainer" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.4
+anchor_right = 0.281
+anchor_bottom = 0.689
+offset_right = 0.319977
+offset_bottom = -0.0800171
+alignment = 1
+
+[node name="MusicaBG" type="AudioStreamPlayer" parent="CanvasLayer"]
+autoplay = true
+bus = &"Music"
+
+[node name="SFX" type="AudioStreamPlayer" parent="CanvasLayer"]
+stream = ExtResource("5_obnxm")
+bus = &"SFX"
+
+[node name="Reader2" parent="." node_paths=PackedStringArray("node_script") instance=ExtResource("4_qyor4")]
+read_script_from_file = true
+node_script = NodePath("Capitulo1")
+choice_at_end_of_script = true
+decision_dictionary = Array[Array]([[&"Segui-la secretamente", NodePath("Reader3A")]])
+
+[node name="Capitulo1" type="Node" parent="Reader2"]
+script = ExtResource("4_b62gf")
+
+[node name="Reader3A" parent="Reader2" node_paths=PackedStringArray("node_script") instance=ExtResource("4_qyor4")]
+read_script_from_file = true
+node_script = NodePath("Capitulo2_A")
+
+[node name="Capitulo2_A" type="Node" parent="Reader2/Reader3A"]
+script = ExtResource("7_hmpfh")

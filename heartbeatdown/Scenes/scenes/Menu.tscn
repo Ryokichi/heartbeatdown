@@ -1,0 +1,440 @@
+[gd_scene load_steps=24 format=3 uid="uid://ciyrj0wfpg7sn"]
+
+[ext_resource type="Texture2D" uid="uid://c6dagr6uh07lx" path="res://Img/VN/BG/MENUbackground.png" id="1_mqreb"]
+[ext_resource type="Script" uid="uid://cij4fh7swqa15" path="res://Scripts/Code/menu.gd" id="1_se6q2"]
+[ext_resource type="Texture2D" uid="uid://kdug18otq36v" path="res://Img/VN/LogoHeartBeatDown.png" id="2_8jt06"]
+[ext_resource type="AudioStream" uid="uid://bj6r38fqegqw" path="res://Sound/moon-dance-cinematic-background-music-for-video-stories-short-1-416092.mp3" id="2_ys3m8"]
+[ext_resource type="AudioStream" uid="uid://eiryfx50gwpk" path="res://Sound/ui-button-click-5-327756.mp3" id="3_6i120"]
+[ext_resource type="Texture2D" uid="uid://b6hols67gsn5f" path="res://Img/VN/MENUbaseBotões.png" id="3_ckbqf"]
+[ext_resource type="Texture2D" uid="uid://cflvty5tdqytj" path="res://Img/VN/MENUbotãoSair.png" id="4_h0dy5"]
+[ext_resource type="Texture2D" uid="uid://c4smrle64rafy" path="res://Img/VN/MENUoutlineBotões.png" id="4_mdmxq"]
+[ext_resource type="FontFile" uid="uid://43gnwunr8hr4" path="res://Styles/Hoefler Text Regular.ttf" id="4_q1j4o"]
+[ext_resource type="Script" uid="uid://ibxhlhg6o4j4" path="res://Scripts/Code/music_slider.gd" id="9_5bebs"]
+[ext_resource type="Texture2D" uid="uid://bq0apxjfrhua1" path="res://Img/VN/BotãoSairOutline.png" id="9_56wvp"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p8lgg"]
+texture = ExtResource("4_mdmxq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_logq7"]
+texture = ExtResource("4_mdmxq")
+modulate_color = Color(0.518503, 0.518503, 0.518503, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3d1lj"]
+texture = ExtResource("3_ckbqf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aq7bb"]
+texture = ExtResource("9_56wvp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q3tr6"]
+texture = ExtResource("4_h0dy5")
+modulate_color = Color(0.329158, 0.329158, 0.329158, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aq5um"]
+texture = ExtResource("4_h0dy5")
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_dfiaa"]
+color = Color(1, 1, 1, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_0jn64"]
+color = Color(0.576471, 0, 0, 1)
+thickness = 6
+
+[sub_resource type="GDScript" id="GDScript_0nce8"]
+script/source = "extends HSlider
+
+@export var audio_bus_name: String
+
+var audio_bus_id
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	audio_bus_id = AudioServer.get_bus_index(audio_bus_name)
+
+
+func _on_value_changed(value: float) -> void:
+	var db = linear_to_db(value)
+	AudioServer.set_bus_volume_db(audio_bus_id, db)
+"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1xol5"]
+texture = ExtResource("4_mdmxq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lrv4y"]
+texture = ExtResource("4_mdmxq")
+modulate_color = Color(0.518503, 0.518503, 0.518503, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sea0j"]
+texture = ExtResource("3_ckbqf")
+
+[node name="Node" type="Node"]
+script = ExtResource("1_se6q2")
+metadata/_edit_vertical_guides_ = [640.0]
+
+[node name="MusicaBG" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_ys3m8")
+autoplay = true
+bus = &"Music"
+parameters/looping = false
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_6i120")
+bus = &"SFX"
+
+[node name="BG" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1_mqreb")
+
+[node name="Logo1" type="Sprite2D" parent="BG"]
+position = Vector2(0, -176)
+scale = Vector2(0.577778, 0.577778)
+texture = ExtResource("2_8jt06")
+
+[node name="Logo2" type="Sprite2D" parent="BG"]
+visible = false
+position = Vector2(0, 32)
+scale = Vector2(0.577778, 0.577778)
+texture = ExtResource("2_8jt06")
+
+[node name="Buttons" type="ItemList" parent="BG"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -264.0
+offset_top = -56.0
+offset_right = 264.0
+offset_bottom = 360.0
+
+[node name="ButJogar" type="Button" parent="BG/Buttons"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 96.0
+offset_top = 8.0
+offset_right = 432.0
+offset_bottom = 88.0
+theme_override_fonts/font = ExtResource("4_q1j4o")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover = SubResource("StyleBoxTexture_p8lgg")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_logq7")
+theme_override_styles/normal = SubResource("StyleBoxTexture_3d1lj")
+text = "B_PLAY"
+icon_alignment = 1
+expand_icon = true
+
+[node name="ButOpcoes" type="Button" parent="BG/Buttons"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 96.0
+offset_top = 104.0
+offset_right = 432.0
+offset_bottom = 184.0
+theme_override_fonts/font = ExtResource("4_q1j4o")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover = SubResource("StyleBoxTexture_p8lgg")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_logq7")
+theme_override_styles/normal = SubResource("StyleBoxTexture_3d1lj")
+text = "B_CONFIG"
+icon_alignment = 1
+expand_icon = true
+
+[node name="ButInstru" type="Button" parent="BG/Buttons"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 96.0
+offset_top = 200.0
+offset_right = 432.0
+offset_bottom = 280.0
+theme_override_fonts/font = ExtResource("4_q1j4o")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover = SubResource("StyleBoxTexture_p8lgg")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_logq7")
+theme_override_styles/normal = SubResource("StyleBoxTexture_3d1lj")
+text = "B_TUTO"
+icon_alignment = 1
+expand_icon = true
+
+[node name="ButCred" type="Button" parent="BG/Buttons"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 96.0
+offset_top = 296.0
+offset_right = 432.0
+offset_bottom = 376.0
+theme_override_fonts/font = ExtResource("4_q1j4o")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover = SubResource("StyleBoxTexture_p8lgg")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_logq7")
+theme_override_styles/normal = SubResource("StyleBoxTexture_3d1lj")
+text = "B_CRED"
+icon_alignment = 1
+expand_icon = true
+
+[node name="ButSair" type="Button" parent="BG"]
+anchors_preset = -1
+anchor_left = 0.9
+anchor_top = 0.044
+anchor_right = 0.975
+anchor_bottom = 0.176
+offset_left = -640.0
+offset_top = -359.68
+offset_right = -640.0
+offset_bottom = -359.72
+theme_override_styles/hover = SubResource("StyleBoxTexture_aq7bb")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_q3tr6")
+theme_override_styles/normal = SubResource("StyleBoxTexture_aq5um")
+icon_alignment = 1
+expand_icon = true
+
+[node name="OptionPanel" type="Panel" parent="BG"]
+visible = false
+offset_left = -360.0
+offset_top = -296.0
+offset_right = 352.0
+offset_bottom = 216.0
+
+[node name="TextSliderMusic" type="Label" parent="BG/OptionPanel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 32.0
+offset_right = 699.0
+offset_bottom = 104.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_q1j4o")
+theme_override_font_sizes/font_size = 30
+text = "M_VOL"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="MusicSlider" type="HSlider" parent="BG/OptionPanel"]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 96.0
+offset_right = 504.0
+offset_bottom = 152.0
+theme_override_styles/slider = SubResource("StyleBoxLine_dfiaa")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_0jn64")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_0jn64")
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = ExtResource("9_5bebs")
+audio_bus_name = "Music"
+
+[node name="TextSliderSFX" type="Label" parent="BG/OptionPanel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 168.0
+offset_right = 699.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_q1j4o")
+theme_override_font_sizes/font_size = 30
+text = "SFX_VOL"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="SFXSlider" type="HSlider" parent="BG/OptionPanel"]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 232.0
+offset_right = 504.0
+offset_bottom = 288.0
+theme_override_styles/slider = SubResource("StyleBoxLine_dfiaa")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_0jn64")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_0jn64")
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = SubResource("GDScript_0nce8")
+audio_bus_name = "SFX"
+
+[node name="OptionButton" type="OptionButton" parent="BG/OptionPanel"]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 336.0
+offset_right = 488.0
+offset_bottom = 408.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_p8lgg")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_logq7")
+theme_override_styles/normal = SubResource("StyleBoxTexture_3d1lj")
+alignment = 1
+selected = 0
+fit_to_longest_item = false
+item_count = 2
+popup/item_0/text = "Português"
+popup/item_0/id = 0
+popup/item_1/text = "English"
+popup/item_1/id = 1
+
+[node name="TutorialPanel" type="Panel" parent="BG"]
+visible = false
+offset_left = -360.0
+offset_top = -328.0
+offset_right = 352.0
+offset_bottom = 216.0
+
+[node name="Tutorial" type="Label" parent="BG/TutorialPanel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 24.0
+offset_right = 699.0
+offset_bottom = 480.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_q1j4o")
+theme_override_font_sizes/font_size = 30
+text = "TXT_TUTO"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="CredPanel" type="Panel" parent="BG"]
+visible = false
+offset_left = -352.0
+offset_top = -328.0
+offset_right = 360.0
+offset_bottom = 216.0
+
+[node name="Creditos" type="Label" parent="BG/CredPanel"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 24.0
+offset_right = 667.0
+offset_bottom = 256.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_q1j4o")
+theme_override_font_sizes/font_size = 30
+text = "TXT_CRED"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButVoltar" type="Button" parent="BG"]
+visible = false
+anchors_preset = -1
+anchor_left = 0.369
+anchor_top = 0.833
+anchor_right = 0.631
+anchor_bottom = 0.944
+offset_left = -640.32
+offset_top = -359.76
+offset_right = -639.68
+offset_bottom = -359.68
+theme_override_fonts/font = ExtResource("4_q1j4o")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover = SubResource("StyleBoxTexture_1xol5")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_lrv4y")
+theme_override_styles/normal = SubResource("StyleBoxTexture_sea0j")
+text = "B_BACK"
+icon_alignment = 1
+expand_icon = true
+
+[node name="ConfirmPanel" type="Panel" parent="BG"]
+visible = false
+offset_left = -352.0
+offset_top = -56.0
+offset_right = 360.0
+offset_bottom = 216.0
+
+[node name="Confirm" type="Label" parent="BG/ConfirmPanel"]
+layout_mode = 0
+offset_left = 32.0
+offset_right = 667.0
+offset_bottom = 128.0
+theme_override_fonts/font = ExtResource("4_q1j4o")
+theme_override_font_sizes/font_size = 30
+text = "TXT_CONFIRM"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButYes" type="Button" parent="BG/ConfirmPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.09
+anchor_top = 0.559
+anchor_right = 0.427
+anchor_bottom = 0.824
+offset_left = -0.0800018
+offset_top = -0.0480042
+offset_right = -0.0240173
+offset_bottom = -0.128021
+theme_override_fonts/font = ExtResource("4_q1j4o")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover = SubResource("StyleBoxTexture_1xol5")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_lrv4y")
+theme_override_styles/normal = SubResource("StyleBoxTexture_sea0j")
+text = "B_YES"
+icon_alignment = 1
+expand_icon = true
+
+[node name="ButVoltar" type="Button" parent="BG/ConfirmPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.573
+anchor_top = 0.559
+anchor_right = 0.91
+anchor_bottom = 0.824
+offset_left = 0.0239868
+offset_top = -0.0480042
+offset_right = 0.0799561
+offset_bottom = -0.128021
+theme_override_fonts/font = ExtResource("4_q1j4o")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover = SubResource("StyleBoxTexture_1xol5")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_lrv4y")
+theme_override_styles/normal = SubResource("StyleBoxTexture_sea0j")
+text = "B_NO"
+icon_alignment = 1
+expand_icon = true
+
+[node name="ButSobre" type="Button" parent="BG"]
+anchors_preset = -1
+anchor_left = 0.025
+anchor_top = 0.044
+anchor_right = 0.2
+anchor_bottom = 0.156
+offset_left = -640.0
+offset_top = -359.68
+offset_right = -640.0
+offset_bottom = -360.32
+theme_override_fonts/font = ExtResource("4_q1j4o")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover = SubResource("StyleBoxTexture_p8lgg")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_logq7")
+theme_override_styles/normal = SubResource("StyleBoxTexture_3d1lj")
+text = "B_SOBRE"
+icon_alignment = 1
+expand_icon = true
+
+[node name="SobrePanel" type="Panel" parent="BG"]
+visible = false
+offset_left = -360.0
+offset_top = -328.0
+offset_right = 352.0
+offset_bottom = 216.0
+
+[node name="Sobre" type="Label" parent="BG/SobrePanel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 24.0
+offset_right = 699.0
+offset_bottom = 480.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_q1j4o")
+theme_override_font_sizes/font_size = 30
+text = "TXT_SOBRE"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[connection signal="pressed" from="BG/Buttons/ButJogar" to="." method="_on_but_jogar_pressed"]
+[connection signal="pressed" from="BG/Buttons/ButOpcoes" to="." method="_on_but_opcoes_pressed"]
+[connection signal="pressed" from="BG/Buttons/ButInstru" to="." method="_on_but_instru_pressed"]
+[connection signal="pressed" from="BG/Buttons/ButCred" to="." method="_on_but_cred_pressed"]
+[connection signal="pressed" from="BG/ButSair" to="." method="_on_but_confirm_pressed"]
+[connection signal="value_changed" from="BG/OptionPanel/MusicSlider" to="BG/OptionPanel/MusicSlider" method="_on_value_changed"]
+[connection signal="value_changed" from="BG/OptionPanel/SFXSlider" to="BG/OptionPanel/SFXSlider" method="_on_value_changed"]
+[connection signal="item_selected" from="BG/OptionPanel/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="BG/ButVoltar" to="." method="_on_but_voltar_pressed"]
+[connection signal="pressed" from="BG/ConfirmPanel/ButYes" to="." method="_on_but_sair_pressed"]
+[connection signal="pressed" from="BG/ConfirmPanel/ButVoltar" to="." method="_on_but_voltar_pressed"]
+[connection signal="pressed" from="BG/ButSobre" to="." method="_on_but_sobre_pressed"]

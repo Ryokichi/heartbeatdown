@@ -1,0 +1,131 @@
+[gd_scene load_steps=6 format=3 uid="uid://ce24r3rb40mre"]
+
+[ext_resource type="Script" path="res://scripts/reader.gd" id="1_ifbfq"]
+[ext_resource type="Texture2D" uid="uid://uy03a4l47kd8" path="res://Img/test_img.png" id="2_aqvfg"]
+
+[sub_resource type="Animation" id="Animation_3jyj8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(848, 328)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_88r44"]
+resource_name = "enter"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1217, 328), Vector2(848, 328)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uoqjw"]
+_data = {
+"RESET": SubResource("Animation_3jyj8"),
+"enter": SubResource("Animation_88r44")
+}
+
+[node name="Reader" type="Node" node_paths=PackedStringArray("text_label", "name_label", "character_image", "character_animator")]
+script = ExtResource("1_ifbfq")
+text_label = NodePath("CanvasLayer/Control/LabelTexto")
+name_label = NodePath("CanvasLayer/Control/LabelNome")
+character_image = NodePath("CanvasLayer/Control/TextureRect")
+character_animator = NodePath("CanvasLayer/Control/TextureRect/AnimationPlayer")
+novel_script = Array[String](["/talk iluhfgslkjh", "maniaco de bosta", "apenas seja quem está sendo ao invés de testar aquilo que não é em troca de sua humanidade.", "/think", "o pensamento do homem absolutalmente desqualificado para imaginar suas obras.", "/bgimg", "/chimg", "/chimg animate ", "/chimg animate leave "])
+choice_at_end_of_script = true
+start_at_runtime = true
+quit_with_quote = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -304.0
+offset_top = -320.0
+offset_right = -48.0
+offset_bottom = -64.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("2_aqvfg")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Control/TextureRect"]
+libraries = {
+"": SubResource("AnimationLibrary_uoqjw")
+}
+
+[node name="LabelTexto" type="RichTextLabel" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -98.0
+grow_horizontal = 2
+grow_vertical = 0
+bbcode_enabled = true
+text = "wflejrlkjrlgehtgowheptoghpqoeurypoqhwpfqpworygoirepoguerpuyqoreiupqrwpuhrwprpqwodkjfpqoiwdçfhqpweoh"
+metadata/_edit_use_anchors_ = true
+
+[node name="LabelNome" type="RichTextLabel" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.851852
+anchor_right = 1.0
+anchor_bottom = 0.851852
+offset_top = -98.0
+grow_horizontal = 2
+grow_vertical = 0
+bbcode_enabled = true
+metadata/_edit_use_anchors_ = true

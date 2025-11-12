@@ -3,2368 +3,3040 @@
     "notes": {
         "0": [
             {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 0.008107423782348633
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 0.2311718463897705
-            },
-            {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 0.23126959800720215
+                "elapsed": 0.010096311569213867
             },
             {
-                "note": 64,
-                "velocity": 100,
-                "time": 0.230769,
-                "elapsed": 0.6925339698791504
-            },
-            {
-                "note": 65,
-                "velocity": 100,
+                "note": 62,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 0.6927876472473145
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 0.923241138458252
+                "elapsed": 0.6430742740631104
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 1.1539802551269531
+                "elapsed": 1.286039113998413
             },
             {
-                "note": 65,
-                "velocity": 100,
+                "note": 64,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 1.1540086269378662
+                "elapsed": 1.7144365310668945
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 2.357283592224121
             },
             {
                 "note": 63,
-                "velocity": 100,
-                "time": 0.230769,
-                "elapsed": 1.6155726909637451
-            },
-            {
-                "note": 65,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 1.6157314777374268
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 1.8464951515197754
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 2.077347993850708
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 2.077446937561035
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0.230769,
-                "elapsed": 2.538712978363037
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 2.538944721221924
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 2.7694947719573975
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 3.0003790855407715
+                "elapsed": 3.0002729892730713
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 3.0004703998565674
+                "elapsed": 3.429032325744629
             },
             {
                 "note": 62,
-                "velocity": 100,
-                "time": 0.230769,
-                "elapsed": 3.4616127014160156
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 4.071676731109619
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 4.714585065841675
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 3.4617066383361816
+                "elapsed": 5.143308639526367
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 5.78586745262146
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 6.0001442432403564
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 6.027034759521484
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 6.214431285858154
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 6.428853750228882
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 6.643120527267456
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 6.857448101043701
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 7.500394582748413
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 8.143013715744019
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 8.571884632110596
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 9.214586973190308
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 9.85728120803833
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 10.285856246948242
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 10.92890977859497
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 11.57210659980774
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 12.000227928161621
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 12.643036365509033
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 3.692720413208008
+                "elapsed": 12.857290744781494
             },
             {
-                "note": 65,
-                "velocity": 100,
+                "note": 61,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 3.92350172996521
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 3.923705577850342
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0.230769,
-                "elapsed": 4.384902238845825
+                "elapsed": 13.071833610534668
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 4.385150194168091
+                "elapsed": 13.286020755767822
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 13.50037670135498
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 13.714451551437378
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 13.92895221710205
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 14.143136978149414
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 14.786179065704346
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 15.000291585922241
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 15.214558124542236
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 16.285852670669556
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 16.500316619873047
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 16.714650869369507
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 16.9288592338562
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 17.14313006401062
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 17.357455730438232
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 17.571804761886597
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 18.214415311813354
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 18.42888331413269
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 18.643118381500244
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 19.71464776992798
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 19.92876696586609
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 20.14319348335266
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 20.357487201690674
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 20.57180118560791
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 20.78609609603882
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 21.000258922576904
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 21.64307975769043
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 21.857546091079712
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 22.072127103805542
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 23.143236875534058
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 23.35726022720337
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 23.571728467941284
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 23.785968780517578
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 24.000256776809692
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 24.21443271636963
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 24.42879343032837
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 25.07186245918274
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 25.285887956619263
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 25.500170707702637
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 26.57188630104065
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 26.78584313392639
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 27.000106811523438
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 4.615893602371216
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 4.846359014511108
+                "elapsed": 27.21456503868103
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 4.8464086055755615
+                "elapsed": 27.42886233329773
             },
             {
-                "note": 64,
-                "velocity": 100,
-                "time": 0.230769,
-                "elapsed": 5.307926416397095
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 27.643106698989868
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 27.8572998046875
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 5.30814266204834
+                "elapsed": 28.500114679336548
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 28.714422702789307
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 28.928924083709717
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 30.000422477722168
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 30.214677810668945
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 30.428706407546997
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 30.643155813217163
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 30.85754084587097
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 31.071733951568604
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 31.28588080406189
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 31.92888045310974
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 32.14307904243469
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 32.35740280151367
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 33.42870807647705
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 33.643003940582275
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 33.857274293899536
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 34.071860790252686
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 34.28609919548035
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 34.5003457069397
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 34.71444511413574
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 35.35752034187317
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 35.5719780921936
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 35.78585910797119
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 36.85744500160217
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 37.07186770439148
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 37.28583478927612
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 37.50010681152344
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 37.71456956863403
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 37.92867875099182
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 38.14339470863342
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 38.78583908081055
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 39.00010681152344
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 39.21441102027893
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 40.2858943939209
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 40.500279664993286
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 40.71448087692261
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 5.5390965938568115
+                "elapsed": 40.92877125740051
             },
             {
-                "note": 63,
-                "velocity": 100,
+                "note": 64,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 5.769440174102783
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 5.769492864608765
+                "elapsed": 41.143184185028076
             },
             {
                 "note": 62,
-                "velocity": 100,
-                "time": 0.230769,
-                "elapsed": 6.231033563613892
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 41.78584861755371
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 6.231213092803955
+                "elapsed": 42.428807735443115
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 42.85738158226013
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 43.50015306472778
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 44.143080949783325
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 44.57182002067566
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 45.21466612815857
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 45.857391595840454
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 46.285845041275024
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 46.92947459220886
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 47.14305901527405
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 47.16982388496399
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 47.35733222961426
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 47.572028398513794
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 47.7858464717865
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 48.0001380443573
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 48.64314031600952
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 49.285791635513306
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 49.714404582977295
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 50.35749101638794
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 51.000251054763794
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 51.428741216659546
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 52.07159090042114
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 52.71484422683716
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 53.14302134513855
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 53.786012411117554
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 6.461698770523071
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 6.692686557769775
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 6.692760229110718
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0.230769,
-                "elapsed": 7.154052495956421
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 7.154262065887451
+                "elapsed": 54.00027513504028
             },
             {
                 "note": 61,
-                "velocity": 100,
-                "time": 0.230769,
-                "elapsed": 7.615575790405273
-            },
-            {
-                "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 7.8464741706848145
+                "elapsed": 54.214439392089844
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 8.077423095703125
+                "elapsed": 54.42873430252075
             },
             {
                 "note": 65,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 8.307881116867065
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0.86538375,
-                "elapsed": 9.404038667678833
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 9.46166729927063
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 9.69268012046814
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 9.923507452011108
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 10.154183387756348
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 10.384872674942017
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 10.615782022476196
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 10.846593618392944
+                "elapsed": 54.64302611351013
             },
             {
                 "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 11.077129364013672
+                "velocity": 0,
+                "time": 0.0044642812499999995,
+                "elapsed": 54.861647844314575
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 11.307943105697632
+                "elapsed": 54.86170053482056
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 56.1431770324707
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 56.143277406692505
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 56.357537269592285
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 56.35764122009277
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 57.428672075271606
             },
             {
                 "note": 65,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 11.5388765335083
+                "elapsed": 57.42871046066284
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 57.643359661102295
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 57.643548250198364
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 57.857887268066406
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 57.858059883117676
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 58.07190823554993
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 58.07221794128418
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 58.28598594665527
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 11.76938772201538
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 12.000496625900269
+                "elapsed": 58.286078691482544
             },
             {
                 "note": 65,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 12.231277704238892
+                "elapsed": 59.57180595397949
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 12.461974859237671
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 12.692478895187378
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 12.923299789428711
+                "elapsed": 59.571860790252686
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 13.269546031951904
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 13.615894317626953
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 13.846292972564697
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 14.077059507369995
+                "elapsed": 59.78585696220398
             },
             {
                 "note": 61,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 14.308113813400269
+                "elapsed": 59.78589940071106
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 60.857455253601074
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 14.538681745529175
+                "elapsed": 60.85754108428955
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 61.071762561798096
             },
             {
                 "note": 61,
-                "velocity": 100,
-                "time": 0.230769,
-                "elapsed": 15.000108242034912
-            },
-            {
-                "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 15.230881452560425
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 15.461728572845459
+                "elapsed": 61.07180452346802
             },
             {
                 "note": 65,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 15.692677974700928
+                "elapsed": 61.286137342453
             },
             {
                 "note": 64,
-                "velocity": 100,
-                "time": 0.692307,
-                "elapsed": 16.615483045578003
-            },
-            {
-                "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 16.67343235015869
+                "elapsed": 61.28624248504639
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 16.730900526046753
+                "elapsed": 61.5003445148468
             },
             {
-                "note": 63,
-                "velocity": 100,
+                "note": 61,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 16.78861165046692
+                "elapsed": 61.50046253204346
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 16.846280574798584
+                "elapsed": 61.71461009979248
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 17.07714009284973
+                "elapsed": 61.71472144126892
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 63.000354528427124
             },
             {
                 "note": 61,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 17.307817697525024
+                "elapsed": 63.0004985332489
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 63.21469044685364
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 63.21480703353882
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 64.28609037399292
             },
             {
                 "note": 65,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 17.5391788482666
+                "elapsed": 64.28621506690979
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 64.50050568580627
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 17.88473391532898
+                "elapsed": 64.50091052055359
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 18.2313129901886
+                "elapsed": 64.71440148353577
             },
             {
-                "note": 63,
-                "velocity": 100,
-                "time": 0.461538,
-                "elapsed": 18.92326307296753
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 64.71444582939148
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 64.9287474155426
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 19.153974056243896
+                "elapsed": 64.92879295349121
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 65.1430037021637
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 65.14304208755493
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 66.42907309532166
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 66.42918992042542
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 66.64338827133179
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 19.3851375579834
+                "elapsed": 66.64351677894592
             },
             {
                 "note": 62,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 19.73091149330139
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 20.07701015472412
-            },
-            {
-                "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 20.308177947998047
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 20.538941621780396
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 20.769466161727905
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 21.000378131866455
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 21.23104429244995
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 21.46189594268799
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 21.692476511001587
+                "elapsed": 67.71437358856201
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 21.923357725143433
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 22.154097080230713
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 22.385061264038086
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 22.38517737388611
+                "elapsed": 67.71440815925598
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 22.615956783294678
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 22.846690893173218
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 22.84681510925293
+                "elapsed": 67.92881441116333
             },
             {
                 "note": 61,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 23.077064514160156
+                "elapsed": 67.92888951301575
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 68.14298486709595
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 23.307790279388428
+                "elapsed": 68.14302778244019
             },
             {
                 "note": 65,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 23.3078293800354
+                "elapsed": 68.35742545127869
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 68.35753107070923
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0.0044642812499999995,
+                "elapsed": 68.57600998878479
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 23.53897714614868
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 23.76970076560974
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 23.77009105682373
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0.230769,
-                "elapsed": 24.230962991714478
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 24.461841106414795
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 24.692721128463745
+                "elapsed": 68.57674074172974
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 24.923545837402344
+                "elapsed": 69.85762643814087
             },
             {
                 "note": 62,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 25.269553899765015
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 69.85777735710144
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 70.07170701026917
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 70.0718150138855
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 71.1432147026062
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 71.14331889152527
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 71.35738492012024
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 71.35746502876282
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 71.57183456420898
             },
             {
                 "note": 61,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 25.61550259590149
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 71.57191252708435
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 71.78597927093506
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 71.78607630729675
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 72.0003890991211
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 25.846656799316406
+                "elapsed": 72.00053668022156
             },
             {
-                "note": 62,
-                "velocity": 100,
-                "time": 0.17307675,
-                "elapsed": 26.71164560317993
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 73.28600764274597
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 73.28610754013062
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 26.76943039894104
+                "elapsed": 73.50029993057251
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 73.50042748451233
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 27.0001163482666
+                "elapsed": 74.57179021835327
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 27.231016159057617
+                "elapsed": 74.57192516326904
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 74.78602886199951
             },
             {
                 "note": 61,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 27.462113618850708
+                "elapsed": 74.78613448143005
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 75.00007247924805
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 75.00010848045349
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 75.21439051628113
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 75.21441602706909
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 75.42868161201477
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 75.42872381210327
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 76.71443295478821
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 76.71446871757507
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 76.92881608009338
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 76.92890620231628
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 78.00007152557373
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 78.00011324882507
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 78.21437382698059
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 78.21440958976746
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 78.4286835193634
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 78.42872738838196
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 78.64341759681702
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 78.64363288879395
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 78.8576192855835
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 78.85778713226318
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 80.143141746521
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 80.14318871498108
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 80.35761189460754
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 27.692694425582886
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 27.92346167564392
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 28.154290437698364
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 28.384721755981445
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 28.61581516265869
+                "elapsed": 80.35777497291565
             },
             {
                 "note": 62,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 28.96174907684326
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 29.307762622833252
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0.17307675,
-                "elapsed": 29.48094868659973
-            },
-            {
-                "note": 65,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 29.538706064224243
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 29.769620418548584
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 30.000447273254395
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 30.230990409851074
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 30.461947679519653
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 30.6926212310791
+                "elapsed": 81.42881608009338
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 30.923475742340088
+                "elapsed": 81.42885780334473
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 81.64310359954834
             },
             {
                 "note": 61,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 31.15404176712036
+                "elapsed": 81.64321660995483
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 81.85748410224915
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 81.85759544372559
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 82.07185459136963
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 82.07196259498596
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 82.28602814674377
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 82.28614020347595
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0.21428549999999996,
+                "elapsed": 82.71432209014893
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 82.92867040634155
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 83.14298748970032
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 83.19659733772278
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 83.35748839378357
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 31.38507056236267
+                "elapsed": 83.35757970809937
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 31.615734577178955
+                "elapsed": 83.57167148590088
             },
             {
-                "note": 64,
-                "velocity": 100,
+                "note": 61,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 31.84654974937439
+                "elapsed": 83.57177877426147
             },
             {
-                "note": 63,
-                "velocity": 100,
+                "note": 62,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 32.0771484375
+                "elapsed": 83.78587865829468
             },
             {
                 "note": 65,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 32.30780863761902
+                "elapsed": 84.00005292892456
             },
             {
                 "note": 64,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 32.65388560295105
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 84.42884516716003
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 84.64302229881287
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 84.64306592941284
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 85.07174897193909
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0.21428549999999996,
+                "elapsed": 85.28575801849365
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 85.50003910064697
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 85.71465849876404
             },
             {
                 "note": 60,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 33.000088930130005
-            },
-            {
-                "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 33.23093891143799
+                "elapsed": 85.71476912498474
             },
             {
                 "note": 63,
-                "velocity": 100,
-                "time": 0.17307675,
-                "elapsed": 34.096193075180054
+                "velocity": 0,
+                "time": 0.21428549999999996,
+                "elapsed": 86.14288306236267
             },
             {
                 "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 34.15400815010071
+                "velocity": 0,
+                "time": 0.21428549999999996,
+                "elapsed": 86.35716342926025
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 34.38497591018677
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 34.615485429763794
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 34.84628129005432
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 35.0770366191864
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 35.30805730819702
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 35.53859066963196
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 35.76934242248535
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 36.00025677680969
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 36.34620189666748
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 36.692381620407104
+                "elapsed": 86.57171416282654
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 36.92318820953369
+                "elapsed": 86.78586602210999
             },
             {
                 "note": 61,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 37.15394377708435
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 37.38473320007324
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 37.61557340621948
+                "elapsed": 87.00021314620972
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 37.84625744819641
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 38.07715392112732
+                "elapsed": 87.21432781219482
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 38.30786466598511
+                "elapsed": 87.428795337677
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 87.64306402206421
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 87.85734462738037
             },
             {
                 "note": 65,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 38.53864121437073
+                "elapsed": 87.91092443466187
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 38.76933670043945
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 40.15414047241211
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 40.3848979473114
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0.05769225,
-                "elapsed": 41.480809926986694
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 41.53856563568115
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 41.7693235874176
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 42.000346422195435
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 42.23107028007507
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 42.46177530288696
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 43.846391439437866
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 44.07716703414917
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0.05769225,
-                "elapsed": 45.1731116771698
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 45.23092031478882
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 45.46179223060608
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 45.69249415397644
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 45.92321538925171
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 46.15399670600891
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 47.53906297683716
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 47.76947617530823
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0.05769225,
-                "elapsed": 48.86542081832886
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 48.92320680618286
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 49.153966665267944
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 49.384870290756226
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 49.61550450325012
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 49.84636187553406
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 51.230875968933105
+                "elapsed": 88.07187581062317
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 51.461684703826904
+                "elapsed": 88.07211351394653
             },
             {
-                "note": 62,
-                "velocity": 100,
-                "time": 0.05769225,
-                "elapsed": 52.557719469070435
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 88.28590703010559
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0.21428549999999996,
+                "elapsed": 88.49999213218689
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 52.61562132835388
+                "elapsed": 88.71450901031494
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 88.9286482334137
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 89.14297652244568
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 89.14302611351013
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 89.3573887348175
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 89.57157444953918
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 89.62517976760864
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0.16071412499999999,
+                "elapsed": 89.78571438789368
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 90.21451044082642
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 90.42876529693604
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 90.42885208129883
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 90.64290714263916
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 90.85723233222961
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 90.91090750694275
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0.16071412499999999,
+                "elapsed": 91.07148551940918
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 91.5000684261322
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 91.71433234214783
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 52.846343994140625
+                "elapsed": 91.71437120437622
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 91.92866277694702
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 92.14297890663147
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 92.35739636421204
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 92.57184648513794
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 92.57206583023071
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 92.78605222702026
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0.21428549999999996,
+                "elapsed": 93.00009369850159
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 93.21449089050293
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 53.077025175094604
+                "elapsed": 93.42866969108582
             },
             {
                 "note": 61,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 53.30779790878296
+                "elapsed": 93.64324522018433
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 93.85737109184265
             },
             {
                 "note": 61,
-                "velocity": 100,
-                "time": 0.230769,
-                "elapsed": 53.76932096481323
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 93.85749101638794
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 54.000258445739746
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 54.2309045791626
+                "elapsed": 94.0716323852539
             },
             {
                 "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 54.461753845214844
+                "velocity": 0,
+                "time": 0.21428549999999996,
+                "elapsed": 94.28582310676575
             },
             {
                 "note": 64,
-                "velocity": 100,
-                "time": 0.86538375,
-                "elapsed": 55.55775761604309
-            },
-            {
-                "note": 65,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 55.61557984352112
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 55.84628939628601
+                "elapsed": 94.50019431114197
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 56.077106952667236
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 56.307945728302
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 56.53859257698059
+                "elapsed": 94.71459674835205
             },
             {
                 "note": 61,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 56.76948428153992
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 57.00026297569275
+                "elapsed": 94.9289321899414
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 57.231022357940674
+                "elapsed": 95.14291214942932
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 95.35739636421204
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 95.57175302505493
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 95.78590059280396
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 96.00005722045898
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 96.00009512901306
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0.21428549999999996,
+                "elapsed": 96.42868065834045
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 96.64290475845337
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 96.85725331306458
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 96.91084718704224
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 97.07169389724731
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 57.46167325973511
+                "elapsed": 97.07178449630737
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 97.28582906723022
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 97.28587365150452
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 97.50004982948303
             },
             {
                 "note": 65,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 57.692466259002686
+                "elapsed": 97.71436619758606
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 98.1431393623352
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 98.3574423789978
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 98.35756492614746
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 98.78577065467834
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0.21428549999999996,
+                "elapsed": 99.000155210495
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 99.21454501152039
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 99.428635597229
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 57.92336630821228
+                "elapsed": 99.42867159843445
             },
             {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 58.15419864654541
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 58.384748697280884
+                "note": 63,
+                "velocity": 0,
+                "time": 0.21428549999999996,
+                "elapsed": 99.85718297958374
             },
             {
                 "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 58.615480184555054
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 58.84634232521057
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 59.07715106010437
+                "velocity": 0,
+                "time": 0.21428549999999996,
+                "elapsed": 100.07148480415344
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 59.42328882217407
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 59.7694935798645
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 60.00027346611023
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 60.230865716934204
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 60.461745738983154
+                "elapsed": 100.28586077690125
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 60.69247555732727
+                "elapsed": 100.50004506111145
             },
             {
                 "note": 61,
-                "velocity": 100,
-                "time": 0.230769,
-                "elapsed": 61.15386772155762
-            },
-            {
-                "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 61.384995222091675
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 61.61548113822937
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 61.846271991729736
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0.692307,
-                "elapsed": 62.769251108169556
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 62.827035903930664
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 62.88476252555847
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 62.942413091659546
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 63.000184059143066
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 63.23096442222595
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 63.4617395401001
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 63.69243025779724
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 64.0387852191925
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 64.3848602771759
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0.461538,
-                "elapsed": 65.07701969146729
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 65.30795645713806
+                "elapsed": 100.7143497467041
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 65.53855514526367
+                "elapsed": 100.92877650260925
             },
             {
                 "note": 62,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 65.88464641571045
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 101.14295029640198
             },
             {
                 "note": 63,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 66.23081731796265
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 101.35738468170166
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 66.46164989471436
+                "elapsed": 101.57169342041016
             },
             {
-                "note": 61,
-                "velocity": 100,
+                "note": 65,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 66.69259285926819
+                "elapsed": 101.62516951560974
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 66.92333793640137
+                "elapsed": 101.78587031364441
+            },
+            {
+                "note": 60,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 101.78598856925964
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 67.15393686294556
+                "elapsed": 102.00009107589722
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0.21428549999999996,
+                "elapsed": 102.2143087387085
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 67.38493084907532
+                "elapsed": 102.42862391471863
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 102.64307808876038
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 102.85723686218262
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 102.85727858543396
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 103.07176303863525
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 103.28584814071655
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 103.33957052230835
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0.16071412499999999,
+                "elapsed": 103.49999332427979
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 103.92864036560059
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 104.14306402206421
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 104.14317393302917
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 104.35754823684692
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 104.57168793678284
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 104.62516164779663
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0.16071412499999999,
+                "elapsed": 104.78572630882263
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 105.21449851989746
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 105.42873239517212
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 67.61566042900085
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 67.84637522697449
-            },
-            {
-                "note": 60,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 68.07706427574158
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 68.30778646469116
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 68.30783009529114
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 68.53885388374329
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 68.53912425041199
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0.3461535,
-                "elapsed": 69.00001740455627
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 69.00010776519775
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 69.23087334632874
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 69.23094892501831
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0.3461535,
-                "elapsed": 69.69236636161804
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 69.69258689880371
-            },
-            {
-                "note": 60,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 70.15423965454102
+                "elapsed": 105.42881536483765
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 70.3851158618927
+                "elapsed": 105.64289593696594
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 70.61547899246216
+                "elapsed": 105.85732126235962
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 70.8462963104248
+                "elapsed": 106.07161045074463
             },
             {
-                "note": 65,
-                "velocity": 100,
+                "note": 62,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 71.07711982727051
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 71.3078761100769
-            },
-            {
-                "note": 60,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 71.53857183456421
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 71.53862047195435
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 71.76928877830505
-            },
-            {
-                "note": 60,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 71.76952862739563
-            },
-            {
-                "note": 60,
-                "velocity": 100,
-                "time": 0.3461535,
-                "elapsed": 72.23087501525879
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 72.23112392425537
-            },
-            {
-                "note": 60,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 72.46158576011658
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 72.46171140670776
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0.3461535,
-                "elapsed": 72.92315220832825
-            },
-            {
-                "note": 60,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 72.92346143722534
-            },
-            {
-                "note": 60,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 73.38491582870483
+                "elapsed": 106.28602576255798
             },
             {
                 "note": 61,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 73.61561298370361
+                "elapsed": 106.28613209724426
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 106.50006461143494
             },
             {
                 "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 73.84627485275269
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 74.07714605331421
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 74.30779647827148
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 74.53862357139587
+                "velocity": 0,
+                "time": 0.21428549999999996,
+                "elapsed": 106.71428489685059
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 74.76943588256836
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 74.76955342292786
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 75.00002789497375
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 75.00016188621521
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0.3461535,
-                "elapsed": 75.46159195899963
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 75.46184372901917
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 75.69235634803772
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 75.69265818595886
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0.3461535,
-                "elapsed": 76.15397691726685
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 76.15430068969727
+                "elapsed": 106.92893195152283
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 76.61568117141724
+                "elapsed": 107.142991065979
             },
             {
                 "note": 61,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 76.84621858596802
+                "elapsed": 107.3572461605072
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 107.57168817520142
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 107.57180619239807
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 77.07701325416565
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 77.30804467201233
+                "elapsed": 107.78580331802368
             },
             {
                 "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 77.53895735740662
+                "velocity": 0,
+                "time": 0.21428549999999996,
+                "elapsed": 108.00005340576172
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 77.76940321922302
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 78.00035119056702
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 78.00046634674072
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 78.2308247089386
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 78.23103833198547
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0.3461535,
-                "elapsed": 78.69231343269348
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 78.69241309165955
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 78.92314124107361
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 78.92345213890076
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0.3461535,
-                "elapsed": 79.38476252555847
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 79.3850564956665
-            },
-            {
-                "note": 60,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 79.84625124931335
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 80.07710790634155
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 80.30806565284729
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 80.53861093521118
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 80.76951599121094
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 81.00011372566223
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 81.23085904121399
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 81.23090624809265
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 81.46157050132751
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 81.46181106567383
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0.3461535,
-                "elapsed": 81.92313933372498
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 81.92329430580139
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 82.15396451950073
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 82.1544542312622
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0.3461535,
-                "elapsed": 82.61545538902283
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 82.6157398223877
-            },
-            {
-                "note": 60,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 83.07699608802795
+                "elapsed": 108.21430993080139
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 83.30789804458618
+                "elapsed": 108.4287941455841
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 108.64293265342712
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 83.53891110420227
+                "elapsed": 108.85732769966125
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 83.76949167251587
+                "elapsed": 109.07170271873474
             },
             {
                 "note": 65,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 84.00006318092346
+                "elapsed": 109.28592562675476
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 84.23086977005005
-            },
-            {
-                "note": 60,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 84.46171736717224
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 84.46179938316345
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 84.69236946105957
-            },
-            {
-                "note": 60,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 84.69267702102661
-            },
-            {
-                "note": 60,
-                "velocity": 100,
-                "time": 0.3461535,
-                "elapsed": 85.15387463569641
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 85.1539855003357
-            },
-            {
-                "note": 60,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 85.38484382629395
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 85.38523697853088
+                "elapsed": 109.50021624565125
             },
             {
                 "note": 64,
-                "velocity": 100,
-                "time": 0.3461535,
-                "elapsed": 85.84617638587952
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 109.71457076072693
             },
             {
-                "note": 60,
-                "velocity": 100,
+                "note": 62,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 85.84627723693848
-            },
-            {
-                "note": 60,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 86.30784749984741
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 86.53855276107788
+                "elapsed": 110.35739398002625
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 86.76948928833008
+                "elapsed": 111.00016522407532
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 87.00036334991455
+                "elapsed": 111.42877912521362
             },
             {
-                "note": 65,
-                "velocity": 100,
+                "note": 62,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 87.23084163665771
+                "elapsed": 112.07173180580139
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 112.71432876586914
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 87.4616186618805
+                "elapsed": 113.14308452606201
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 87.69269442558289
+                "elapsed": 113.78590130805969
             },
             {
-                "note": 65,
-                "velocity": 100,
+                "note": 63,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 87.6927969455719
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 87.92312908172607
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 87.92403817176819
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0.3461535,
-                "elapsed": 88.38489317893982
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 88.38519525527954
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 88.61554884910583
-            },
-            {
-                "note": 62,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 88.61580991744995
+                "elapsed": 114.4286060333252
             },
             {
                 "note": 64,
-                "velocity": 100,
-                "time": 0.3461535,
-                "elapsed": 89.0770173072815
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 114.85742950439453
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 89.07720899581909
+                "elapsed": 115.50022649765015
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 115.71446585655212
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 115.74127793312073
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 115.9288022518158
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 116.1431736946106
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 116.3572895526886
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 116.57180666923523
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 117.21447730064392
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 117.8572473526001
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 118.28578925132751
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 118.92890667915344
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 119.57146644592285
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 120.0003023147583
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 120.64303088188171
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 121.28583431243896
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 121.71451687812805
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 122.35729098320007
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 89.53910398483276
+                "elapsed": 122.57182598114014
             },
             {
                 "note": 61,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 89.76957201957703
+                "elapsed": 122.78585481643677
             },
             {
-                "note": 62,
-                "velocity": 100,
+                "note": 64,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 90.00024080276489
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 90.2308599948883
+                "elapsed": 123.0001904964447
             },
             {
                 "note": 65,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 90.46175074577332
+                "elapsed": 123.21431803703308
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 90.69256830215454
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 90.92333841323853
+                "elapsed": 123.4286322593689
             },
             {
                 "note": 61,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 90.92345643043518
+                "elapsed": 123.6431782245636
             },
             {
-                "note": 61,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 91.15393090248108
-            },
-            {
-                "note": 64,
-                "velocity": 100,
+                "note": 62,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 91.15439367294312
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0.3461535,
-                "elapsed": 91.61547517776489
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 91.61555290222168
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0.1153845,
-                "elapsed": 91.84614706039429
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 91.84623885154724
+                "elapsed": 123.85722804069519
             },
             {
                 "note": 63,
-                "velocity": 100,
-                "time": 0.3461535,
-                "elapsed": 92.30769658088684
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 124.5003125667572
             },
             {
                 "note": 61,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 92.30788040161133
+                "elapsed": 124.71440982818604
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 124.92862296104431
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 126.00002956390381
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 126.21447443962097
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 126.42875051498413
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 126.64300322532654
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 126.857177734375
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 127.07177066802979
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 127.28577494621277
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 127.92897462844849
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 128.14298701286316
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 128.3572142124176
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 129.42881989479065
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 129.64305758476257
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 129.85734724998474
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 130.0714979171753
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 130.28572630882263
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 130.5002794265747
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 130.7144763469696
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 131.35722255706787
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 131.5717477798462
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 131.7860062122345
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 132.85732913017273
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 133.07165670394897
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 133.2858738899231
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 133.5002167224884
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 133.7143852710724
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 133.92858815193176
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 134.14301586151123
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 134.78582215309143
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 135.00009727478027
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 135.2144284248352
+            },
+            {
+                "note": 65,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 136.28591680526733
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 136.50002598762512
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 136.71439933776855
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 92.76938986778259
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 93.00020551681519
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 93.2309091091156
+                "elapsed": 136.92887926101685
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 93.46168518066406
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 93.6927080154419
+                "elapsed": 137.14312624931335
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 93.92331290245056
+                "elapsed": 137.7858533859253
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 94.15420126914978
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 94.38482427597046
+                "elapsed": 138.42873620986938
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 94.38487911224365
+                "elapsed": 138.85718870162964
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 94.61555552482605
-            },
-            {
-                "note": 65,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 94.84632968902588
+                "elapsed": 139.50027132034302
             },
             {
                 "note": 63,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 94.84642386436462
+                "elapsed": 140.14311265945435
             },
             {
-                "note": 61,
-                "velocity": 100,
+                "note": 64,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 95.07723355293274
+                "elapsed": 140.57156991958618
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 95.3078396320343
+                "elapsed": 141.2144649028778
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 141.85719752311707
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 142.28597974777222
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 142.92874002456665
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 143.14307641983032
             },
             {
                 "note": 65,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 95.30789184570312
+                "elapsed": 143.16983771324158
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 143.35733246803284
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 143.57163000106812
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 143.78573870658875
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 144.00016570091248
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 144.64317297935486
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 145.28589296340942
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 145.71445035934448
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 146.35743308067322
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 147.00001645088196
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 147.42887616157532
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 148.0714361667633
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 148.7145652770996
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 149.1430263519287
+            },
+            {
+                "note": 62,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 149.78584361076355
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 95.53859281539917
+                "elapsed": 150.00034928321838
+            },
+            {
+                "note": 61,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 150.21445679664612
+            },
+            {
+                "note": 63,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 150.42888236045837
             },
             {
                 "note": 64,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 95.769460439682
+                "elapsed": 150.6429193019867
+            },
+            {
+                "note": 64,
+                "velocity": 0,
+                "time": 0,
+                "elapsed": 150.8573055267334
             },
             {
                 "note": 62,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 95.76958394050598
+                "elapsed": 150.85742902755737
             },
             {
-                "note": 61,
-                "velocity": 100,
+                "note": 65,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 96.00027298927307
+                "elapsed": 150.85750436782837
             },
             {
                 "note": 60,
-                "velocity": 100,
+                "velocity": 0,
                 "time": 0,
-                "elapsed": 96.00038003921509
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 96.00045204162598
-            },
-            {
-                "note": 63,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 96.4618194103241
-            },
-            {
-                "note": 64,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 96.46187496185303
-            },
-            {
-                "note": 61,
-                "velocity": 100,
-                "time": 0,
-                "elapsed": 96.46191167831421
+                "elapsed": 150.85759139060974
             }
         ]
     },
