@@ -9,9 +9,9 @@ func setValues(text, color, play_miss = false):
 	if (play_miss):
 		label_settings.font_color = Color8(200, 50, 50, 255)
 		$Label.label_settings = label_settings
-		play_miss()
+		self.play_miss()
 		return
-	play_hit()
+	self.play_hit()
 	pass
 	
 func play_hit():

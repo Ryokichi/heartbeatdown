@@ -1,15 +1,13 @@
 extends Node2D
+
 @onready var nota = preload("res://Scenes/Utils/MusicNote.tscn")
 @onready var hitParticles = preload("res://Scenes/Utils/hitParticles.tscn")
 @onready var hitText = preload("res://Scenes/Utils/HitText.tscn")
-
 @export var follow_scene: PackedScene = null
 
-#chartData = GameUtils.load_json_to_dict("res://assets/music_charts/music_01.json")
-#audio = preload("res://assets/audio/musica_01.ogg")
-
 var audio = null
-var chartData = [];
+var chartData = []
+var missSFX = {}
 var currNote = null
 var gameSpeed = 1
 var musicIsOver = false
@@ -122,6 +120,16 @@ func onMiss(hitBoxId):
 	self.playerLife = clamp(self.playerLife, 0, 100)
 	$PlayerLife.value = self.playerLife
 	self.show_hit_text("miss", true)
+	self.playSFX(hitBoxId)
+	pass
+
+func playSFX(hitBoxId):
+	var sfx = AudioStreamPlayer.new()
+	sfx.volume_db = -20
+	sfx.stream = self.missSFX[hitBoxId]
+	add_child(sfx)
+	sfx.play()
+	sfx.finished.connect(sfx.queue_free)
 	pass
 
 func show_hit_text(accuracy_type, miss):
@@ -152,13 +160,13 @@ func nextScene():
 func _process(delta: float) -> void:
 	#if (self.timeElapsed > 2):
 		#self.musicIsOver = true
-	$Info.text = """Vel: %.1f | Tempo: %.2f
-	Notas %d / %d""" % [
-		self.gameSpeed, 
-		self.timeElapsed, 
-		self.points, 
-		self.playerNotes
-	]
+	#$Info.text = """Vel: %.1f | Tempo: %.2f
+	#Notas %d / %d""" % [
+		#self.gameSpeed, 
+		#self.timeElapsed, 
+		#self.points, 
+		#self.playerNotes
+	#]
 
 	if Input.is_action_just_pressed("speed_down"):
 		change_speed(-0.1)
@@ -188,16 +196,20 @@ func _process(delta: float) -> void:
 	pass
 
 func _ready():
-	chartData = GameUtils.getChartData()
-	audio = load(GameUtils.getAudioName())
-	print(GameUtils.getAudioName())
-	print(audio)
-	$audioPlayer.stream = audio
-	
+	self.chartData = GameUtils.getChartData()
 	self.notesSequence = chartData["notes"]["0"]
 	self.playerNotes = GameUtils.countNotes(chartData["notes"]["0"])
 	self.currNote = getNextNote()
+	self.missSFX = {
+		'hit_box_1': load("res://assets/sfx/Miss1.mp3"),
+		'hit_box_2': load("res://assets/sfx/Miss2.mp3"),
+		'hit_box_3': load("res://assets/sfx/Miss3.mp3"),
+		'hit_box_4': load("res://assets/sfx/Miss4.mp3"),
+		'hit_box_5': load("res://assets/sfx/Miss5.mp3"),
+		'hit_box_6': load("res://assets/sfx/Miss6.mp3")
+	}
 	
+	$audioPlayer.stream = load(GameUtils.getAudioName())
 	$PlayerLife.set_inveted_mode(true)
 	$PlayerLife.set_label("D. Casmurro")
 	$BossLife.set_label("Capitu")
@@ -233,5 +245,5 @@ func _ready():
 	$Trilha/NoteHitBox5.set_original_color(noteColors[4])
 	$Trilha/NoteHitBox6.set_original_color(noteColors[5])
 	
-	set_timeToWait(self.currNote['elapsed']+3.2+(0))
+	set_timeToWait(self.currNote['elapsed']+3.2)
 	pass
