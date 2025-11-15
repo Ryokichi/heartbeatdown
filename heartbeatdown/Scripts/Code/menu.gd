@@ -21,6 +21,7 @@ extends Node
 func _ready() -> void:
 	await FadeManager.fade_from_black()
 	FadeManager.queue_free()
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

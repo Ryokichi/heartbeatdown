@@ -275,6 +275,9 @@ character_image = NodePath("CanvasLayer/Control/Sprite")
 character_animator = NodePath("CanvasLayer/Control/Sprite/AnimationSprite")
 next_node = NodePath("Reader2")
 container_but = NodePath("CanvasLayer/Control/ContainerEscolhas")
+start_at_runtime = true
+quit_with_quote = true
+skip_novel_script = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

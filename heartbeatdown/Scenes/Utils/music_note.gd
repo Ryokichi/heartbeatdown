@@ -16,6 +16,9 @@ func _ready() -> void:
 	
 func get_exploding():
 	return self.exploding
+	
+func destructOnGameOver():
+	queue_free()
 
 func hit():
 	# print("Acertou!")

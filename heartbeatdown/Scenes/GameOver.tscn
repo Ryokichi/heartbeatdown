@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://e5v7tag4wsni"]
+
+[ext_resource type="Script" uid="uid://bkdenws8b2dl6" path="res://Scripts/Code/game_over.gd" id="1_k52d1"]
+[ext_resource type="FontFile" uid="uid://43gnwunr8hr4" path="res://Styles/Hoefler Text Regular.ttf" id="2_ktc4i"]
+[ext_resource type="Texture2D" uid="uid://c6dagr6uh07lx" path="res://Img/VN/BG/MENUbackground.png" id="2_uib17"]
+
+[node name="GameOver" type="Node2D"]
+script = ExtResource("1_k52d1")
+
+[node name="MenUbackground" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("2_uib17")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -19.0
+offset_top = -22.0
+offset_right = 1295.0
+offset_bottom = 735.0
+color = Color(3.44295e-09, 0.00283045, 9.40054e-11, 0.282353)
+
+[node name="GameOverText" type="RichTextLabel" parent="."]
+modulate = Color(0.831373, 0.231373, 0.192157, 1)
+offset_right = 1280.0
+offset_bottom = 566.0
+theme_override_fonts/normal_font = ExtResource("2_ktc4i")
+theme_override_font_sizes/bold_italics_font_size = 1
+theme_override_font_sizes/italics_font_size = 0
+theme_override_font_sizes/mono_font_size = 0
+theme_override_font_sizes/normal_font_size = 84
+theme_override_font_sizes/bold_font_size = 0
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+visible = false
+offset_left = 519.0
+offset_top = 455.0
+offset_right = 751.0
+offset_bottom = 486.0
+text = "Menu"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 472.0
+offset_top = 412.0
+offset_right = 773.0
+offset_bottom = 471.0
+text = "Tentar novamente"
+
+[connection signal="pressed" from="Button" to="." method="return_to_menu"]
+[connection signal="pressed" from="Button2" to="." method="retry"]

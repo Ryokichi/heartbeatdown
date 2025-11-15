@@ -17,8 +17,13 @@ var timeToWait = 0
 var playerNotes = 0
 var bossNotes = 0
 var points = 0
+var notesPlayed = 0
 var totalNotes = 0
 var playerLife = 100
+var bossLife = 100
+
+var gameReady = false
+var gameOver = false
 
 var paused = false
 var pause_menu: Control
@@ -62,7 +67,7 @@ func set_timeToWait(time):
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):  # ESC
 		print("Pause chamado")
-		toggle_pause()
+		#toggle_pause()
 
 func toggle_pause():
 	paused = !paused    
@@ -87,6 +92,7 @@ func resume_game():
 
 func onHit(noteData):
 	self.points += 1
+	self.notesPlayed += 1
 	# Dar pontos baseado na precisão
 	match noteData.accuracy:
 		"perfect":
@@ -117,15 +123,30 @@ func onMiss(hitBoxId):
 	$Casmurro.play_miss()
 	$Capitu.play_hit(hitBoxId)
 	self.playerLife -= 3
-	self.playerLife = clamp(self.playerLife, 0, 100)
-	$PlayerLife.value = self.playerLife
+	self.notesPlayed += 1
+
+	if (self.playerLife <= 0):
+		self.setGameOver()
+		
+
+	self.updatePlayerLife()
 	self.show_hit_text("miss", true)
 	self.playSFX(hitBoxId)
+	pass
+	
+func updatePlayerLife():
+	self.playerLife = clamp(self.playerLife, 0, 100)
+	$PlayerLife.value = self.playerLife
+	pass
+
+func updateBossLife():
+	var perc = round((self.playerNotes - self.notesPlayed)*100 / self.playerNotes)
+	$BossLife.value = perc
 	pass
 
 func playSFX(hitBoxId):
 	var sfx = AudioStreamPlayer.new()
-	sfx.volume_db = -20
+	sfx.volume_db = -25
 	sfx.stream = self.missSFX[hitBoxId]
 	add_child(sfx)
 	sfx.play()
@@ -156,17 +177,33 @@ func show_hit_text(accuracy_type, miss):
 func nextScene():
 	get_tree().change_scene_to_file(GameUtils.getNextScene())
 	pass
+	
+func killAllNotes():
+	for child in $Trilha.get_children():
+		if (child.has_method("destructOnGameOver")):
+			child.destructOnGameOver()
+			print(child)
+	pass
+
+func setGameOver():
+	self.gameOver = true
+	$audioPlayer.stop()
+	self.killAllNotes()
+	
 
 func _process(delta: float) -> void:
 	#if (self.timeElapsed > 2):
 		#self.musicIsOver = true
-	#$Info.text = """Vel: %.1f | Tempo: %.2f
-	#Notas %d / %d""" % [
-		#self.gameSpeed, 
-		#self.timeElapsed, 
-		#self.points, 
-		#self.playerNotes
-	#]
+	$Info.text = """Vel: %.1f | Tempo: %.2f
+	Notas %d / %d -- %d""" % [
+		self.gameSpeed, 
+		self.timeElapsed, 
+		self.points, 
+		self.playerNotes,
+		self.notesPlayed
+	]
+
+	self.updateBossLife()
 
 	if Input.is_action_just_pressed("speed_down"):
 		change_speed(-0.1)
@@ -174,12 +211,24 @@ func _process(delta: float) -> void:
 		change_speed(0.1)
 	pass
 	
+	if (not self.gameReady):
+		return
+	
+	if (self.gameOver):
+		await get_tree().create_timer(2).timeout
+		get_tree().change_scene_to_file("res://Scenes/GameOver.tscn")
+		return
+
 	if (self.notesSequence.is_empty()):
 		self.musicIsOver = true
+		return
 
 	if (self.musicIsOver):
 		await get_tree().create_timer(10).timeout
 		self.nextScene()
+		return
+		
+	if (self.musicIsOver or self.gameOver):
 		return
 
 	self.timeElapsed += delta
@@ -196,6 +245,8 @@ func _process(delta: float) -> void:
 	pass
 
 func _ready():
+	#await FadeManager.fade_from_black()
+	#FadeManager.queue_free()
 	self.chartData = GameUtils.getChartData()
 	self.notesSequence = chartData["notes"]["0"]
 	self.playerNotes = GameUtils.countNotes(chartData["notes"]["0"])
@@ -245,5 +296,7 @@ func _ready():
 	$Trilha/NoteHitBox5.set_original_color(noteColors[4])
 	$Trilha/NoteHitBox6.set_original_color(noteColors[5])
 	
+	
 	set_timeToWait(self.currNote['elapsed']+3.2)
+	self.gameReady = true
 	pass
